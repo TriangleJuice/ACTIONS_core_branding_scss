@@ -1,0 +1,52 @@
+/**
+ * LAYOUT
+ * -------------------------------------------------------------------
+ */
+
+
+/**
+ * HTML styling
+ * -------------------------------------------------------------------
+ */
+
+html {
+  -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+  // empty line because of sass-lint bug! ¯\_(ツ)_/¯
+  -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+  -webkit-tap-highlight-color: rgba($black, 0); // sass-lint:disable-line no-vendor-prefixes
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**
+ * Remove inner padding and
+ * border in Firefox 4+
+ */
+::-moz-focus-inner { // sass-lint:disable-line no-vendor-prefixes
+  border: none;
+  padding: 0;
+}
+
+/**
+ * Hide OS controls for Windows
+ * http://msdn.microsoft.com/en-us/library/windows/apps/hh465742.aspx
+ */
+::-ms-expand { // sass-lint:disable-line no-vendor-prefixes
+  display: none;
+}
+
+/**
+ * Hide clear button in input fields for Windows
+ * https://msdn.microsoft.com/en-us/library/windows/apps/hh465740.aspx
+ */
+::-ms-clear { // sass-lint:disable-line no-vendor-prefixes
+  display: none;
+  height: 0;
+  width: 0;
+}

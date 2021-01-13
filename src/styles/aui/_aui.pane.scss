@@ -1,0 +1,36 @@
+/**
+ * AUI PANE
+ * -------------------------------------------------------------------
+ */
+
+$pane-width: 20rem !default;
+
+.m-pane {
+  background-color: $white;
+  height: 100%;
+  width: $pane-width;
+  z-index: layer('pane');
+
+  &__content {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  &--left,
+  &--right {
+    position: absolute;
+    transition: transform $animation-duration $animation-easing;
+
+    &.m-pane--open {
+      transform: translate(0);
+    }
+  }
+
+  &--left {
+    transform: translate(-100%);
+  }
+
+  &--right {
+    transform: translate(100%);
+  }
+}

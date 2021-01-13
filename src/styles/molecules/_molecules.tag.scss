@@ -1,0 +1,39 @@
+/**
+ * TAGS
+ * -------------------------------------------------------------------
+ */
+
+.m-tag {
+  background: $tag-bg;
+  box-shadow: 0 0 0 1px $tag-border inset;
+  color: $tag-color;
+  display: inline-flex;
+  height: $tag-height;
+  line-height: $tag-height;
+  max-width: 100%;
+
+  > *:not(.m-tag__label):not(.m-tag__input) {
+    flex-shrink: 0;
+  }
+}
+
+.m-tag__label {
+  @extend %u-text-truncate;
+  display: block;
+  font-weight: $bold;
+  max-width: $spacer * 10;
+  padding: 0 $spacer-xs;
+}
+
+.m-tag__input {
+  @include a-input-placeholder {
+    color: $tag-placeholder;
+  }
+
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  max-width: $spacer * 10;
+  min-height: $tag-height;
+  padding: 0 $spacer-xs;
+}

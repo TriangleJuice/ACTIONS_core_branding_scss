@@ -1,0 +1,142 @@
+/**
+ * TABLES
+ * -------------------------------------------------------------------
+ */
+
+
+/**
+ * TABLE PLACEHOLDER
+ * -------------------------------------------------------------------
+ */
+
+%a-table {
+  background-color: $table-bg;
+  border: 1px solid $table-border;
+  border-collapse: collapse;
+  width: 100%;
+
+  caption {
+    margin-bottom: $spacer-sm / 2;
+    text-align: left;
+  }
+
+  thead {
+    background: $background-color-light;
+  }
+
+  tr {
+    border-bottom: 1px solid $table-border;
+    height: $spacer-lg;
+    transition: background-color $animation-duration $animation-easing;
+
+    &.a-table--clickable,
+    &.has-click-action {
+      &:hover {
+        background-color: $link-background-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  th,
+  td {
+    padding: $table-padding;
+
+    &:not(.u-text-center):not(.u-text-right):not(.u-text-justify) {
+      text-align: left;
+    }
+
+    &.is-condensed {
+      padding: $table-padding / 2;
+    }
+
+    &.has-no-padding {
+      padding: 0;
+    }
+  }
+}
+
+.a-table {
+  @extend %a-table;
+}
+
+
+/**
+ * TABLE SIZES
+ * -------------------------------------------------------------------
+ */
+
+.a-table.a-table--small tr {
+  height: $spacer-md;
+}
+
+
+/**
+ * TABLE SCHEMES
+ * -------------------------------------------------------------------
+ */
+
+.a-table.a-table--primary thead {
+  background-color: $table-primary-head-bg;
+  color: $table-primary-head-color;
+}
+
+.a-table.a-table--secondary thead {
+  background-color: $table-secondary-head-bg;
+  color: $table-secondary-head-color;
+}
+
+.a-table.a-table--striped tbody {
+
+  tr:nth-child(odd) {
+    background-color: $white;
+
+    &.a-table--clickable,
+    &.has-click-action {
+      &:hover {
+        background-color: $link-background-color;
+      }
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: $table-striped-bg;
+
+    &.a-table--clickable,
+    &.has-click-action {
+      &:hover {
+        background-color: $link-background-color;
+      }
+    }
+  }
+}
+
+
+/**
+ * TABLE RESPONSIVE WRAPPER
+ * -------------------------------------------------------------------
+ */
+
+.a-table__wrapper-responsive {
+  -ms-overflow-style: scrollbar; // sass-lint:disable-line no-vendor-prefixes
+  -webkit-overflow-scrolling: touch; // sass-lint:disable-line no-vendor-prefixes
+  background-color: $table-bg;
+  border: 1px solid $table-border;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+
+  table {
+    border: none;
+    margin-bottom: -1px;
+
+    > thead > tr,
+    > tbody > tr,
+    > tfoot > tr {
+      > td,
+      > th {
+        white-space: nowrap;
+      }
+    }
+  }
+}

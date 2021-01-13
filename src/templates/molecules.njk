@@ -1,0 +1,2368 @@
+<div class="u-wrapper u-margin-top d-h2">
+    <div class="u-container">
+        <h2>Molecules</h2>
+    </div>
+</div>
+<div class="u-wrapper">
+    <div class="u-container">
+        <a name="molecules-accordion" aria-label="Accordion"></a>
+        <h3 class="u-margin-top-lg">Accordion</h3>
+        <span class="d-file">molecules/molecules.accordion</span>
+        <div class="d">
+            <div>
+                <div class="m-accordion">
+                    <div class="m-accordion__tab is-open">
+                        <div class="m-accordion__header">
+                            Aeneis
+                        </div>
+                        <div class="m-accordion__content">
+                            <div class="u-margin">
+                                <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram. Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-accordion__tab">
+                        <div class="m-accordion__header">
+                            De Bello Gallico
+                        </div>
+                        <div class="m-accordion__content">
+                            ...
+                        </div>
+                    </div>
+                    <div class="m-accordion__tab">
+                        <div class="m-accordion__header">
+                            Odes
+                        </div>
+                        <div class="m-accordion__content">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-accordion"&gt;
+  &lt;div class="m-accordion__tab is-open"&gt;
+    &lt;div class="m-accordion__header"&gt;
+      Aeneis
+    &lt;/div&gt;
+    &lt;div class="m-accordion__content"&gt;
+      &lt;div class="u-margin"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="m-accordion__tab"&gt;
+    &lt;div class="m-accordion__header"&gt;
+      De Bello Gallico
+    &lt;/div&gt;
+    &lt;div class="m-accordion__content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="m-accordion__tab"&gt;
+    &lt;div class="m-accordion__header"&gt;
+      Odes
+    &lt;/div&gt;
+    &lt;div class="m-accordion__content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-alert" aria-label="Alert"></a>
+        <h3 class="u-margin-top-lg">Alert</h3>
+        <span class="d-file">molecules/molecules.alert</span>
+        <div class="m-alert d-alert m-alert--wcag">
+            <p><span class="u-screen-reader-only">Accessibility note. </span>If you use these alerts as a popup, you have to add <code>aria-modal="true"</code> to the parent <code>&lt;div&gt;</code>.</p>
+        </div>
+        <div class="d">
+            <div>
+                <div role="alertdialog" aria-labelledby="alert" class="m-alert">
+                    <button class="a-button-transparent has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
+                    <h4 id="alert" class="h5 u-margin-bottom-xs">Alert</h4>
+                    <p class="u-margin-bottom">Some explanation.</p>
+                    <div class="m-alert__actions">
+                        <button class="a-button-outline a-button--small">Cancel</button>
+                        <button class="a-button a-button--small">Got it</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert" class="m-alert"&gt;
+  &lt;button class="a-button-transparent has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;h4 id="alert" class="h5 u-margin-bottom-xs"&gt;Alert&lt;/h4&gt;
+  &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
+  &lt;div class="m-alert__actions"&gt;
+    &lt;button class="a-button-outline a-button--small"&gt;Cancel&lt;/button&gt;
+    &lt;button class="a-button a-button--small"&gt;Got it&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div role="alertdialog" aria-labelledby="alert-success" class="m-alert m-alert--success">
+                    <button class="a-button-transparent a-button--success has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
+                    <h4 id="alert-success" class="h5 u-margin-bottom-xs">Success alert</h4>
+                    <p class="u-margin-bottom">Some explanation.</p>
+                    <div class="m-alert__actions">
+                        <button class="a-button-outline a-button--success a-button--small">Cancel</button>
+                        <button class="a-button a-button--success a-button--small">Got it</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-success" class="m-alert m-alert--success"&gt;
+  &lt;button class="a-button-transparent a-button--success has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;h4 id="alert-success" class="h5 u-margin-bottom-xs"&gt;Success alert&lt;/h4&gt;
+  &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
+  &lt;div class="m-alert__actions"&gt;
+    &lt;button class="a-button-outline a-button--success a-button--small"&gt;Cancel&lt;/button&gt;
+    &lt;button class="a-button a-button--success a-button--small"&gt;Got it&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div role="alertdialog" aria-labelledby="alert-warning" class="m-alert m-alert--warning">
+                    <button class="a-button-transparent a-button--warning has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
+                    <h4 id="alert-warning" class="h5 u-margin-bottom-xs">Warning alert</h4>
+                    <p class="u-margin-bottom">Some explanation.</p>
+                    <div class="m-alert__actions">
+                        <button class="a-button-outline a-button--warning a-button--small">Cancel</button>
+                        <button class="a-button a-button--warning a-button--small">Got it</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-warning" class="m-alert m-alert--warning"&gt;
+  &lt;button class="a-button-transparent a-button--warning has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;h4 id="alert-warning" class="h5 u-margin-bottom-xs"&gt;Warning alert&lt;/h4&gt;
+  &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
+  &lt;div class="m-alert__actions"&gt;
+    &lt;button class="a-button-outline a-button--warning a-button--small"&gt;Cancel&lt;/button&gt;
+    &lt;button class="a-button a-button--warning a-button--small"&gt;Got it&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div role="alertdialog" aria-labelledby="alert-danger" class="m-alert m-alert--danger">
+                    <button class="a-button-transparent a-button--danger has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
+                    <h4 id="alert-danger" class="h5 u-margin-bottom-xs">Danger alert</h4>
+                    <p class="u-margin-bottom">Some explanation.</p>
+                    <div class="m-alert__actions">
+                        <button class="a-button-outline a-button--danger a-button--small">Cancel</button>
+                        <button class="a-button a-button--danger a-button--small">Got it</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-danger" class="m-alert m-alert--danger"&gt;
+  &lt;button class="a-button-transparent a-button--danger has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;h4 id="alert-danger" class="h5 u-margin-bottom-xs"&gt;Danger alert&lt;/h4&gt;
+  &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
+  &lt;div class="m-alert__actions"&gt;
+    &lt;button class="a-button-outline a-button--danger a-button--small"&gt;Cancel&lt;/button&gt;
+    &lt;button class="a-button a-button--danger a-button--small"&gt;Got it&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-breadcrumb" aria-label="Breadcrumb"></a>
+        <h3 class="u-margin-top-lg">Breadcrumb</h3>
+        <span class="d-file">molecules/molecules.breadcrumb</span>
+        <div class="d">
+            <div>
+                <ul class="m-breadcrumbs">
+                    <li><a href="javascript:void(0);">Home</a></li>
+                    <li><a href="javascript:void(0);">Styleguide</a></li>
+                    <li><a href="javascript:void(0);">Molecules</a></li>
+                    <li>Breadcrumb</li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-breadcrumbs"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Styleguide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Molecules&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Breadcrumb&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-button-group" aria-label="Button group"></a>
+        <h3 class="u-margin-top-lg">Button group</h3>
+        <span class="d-file">molecules/molecules.button-group</span>
+        <div class="d">
+            <div>
+                <div>
+                    <div class="m-button-group u-margin-bottom">
+                        <button class="a-button">Primary</button>
+                        <button class="a-button">Button</button>
+                        <button class="a-button">Group</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="m-button-group u-margin-bottom">
+                        <button class="a-button-negative">Primary</button>
+                        <button class="a-button-negative">Button</button>
+                        <button class="a-button-negative">Group</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="m-button-group u-margin-bottom">
+                        <button class="a-button-outline">Primary</button>
+                        <button class="a-button-outline">Button</button>
+                        <button class="a-button-outline">Group</button>
+                    </div>
+                    <div class="m-alert d-alert">
+                        <p>Note that all button variations are possible in button groups. Go to the <a href="#atoms-button">buttons</a> section to check out all possibilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group"&gt;
+  &lt;button class="a-button"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button"&gt;Group&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group"&gt;
+  &lt;button class="a-button-negative"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button-negative"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button-negative"&gt;Group&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group"&gt;
+  &lt;button class="a-button-outline"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button-outline"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button-outline"&gt;Group&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div>
+                    <div class="m-button-group m-button-group--vertical u-margin-bottom">
+                        <button class="a-button">Primary</button>
+                        <button class="a-button">Button</button>
+                        <button class="a-button">Group</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="m-button-group m-button-group--vertical u-margin-bottom">
+                        <button class="a-button-negative">Primary</button>
+                        <button class="a-button-negative">Button</button>
+                        <button class="a-button-negative">Group</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="m-button-group m-button-group--vertical u-margin-bottom">
+                        <button class="a-button-outline">Primary</button>
+                        <button class="a-button-outline">Button</button>
+                        <button class="a-button-outline">Group</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group m-button-group--vertical"&gt;
+  &lt;button class="a-button"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button"&gt;Group&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group m-button-group--vertical"&gt;
+  &lt;button class="a-button-negative"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button-negative"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button-negative"&gt;Group&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group m-button-group--vertical"&gt;
+  &lt;button class="a-button-outline"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button-outline"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button-outline"&gt;Group&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-button-list" aria-label="Button list"></a>
+        <h3 class="u-margin-top-lg">Button list</h3>
+        <span class="d-file">molecules/molecules.button-list</span>
+        <div class="d">
+            <div>
+                <ul class="m-button-list">
+                    <li>
+                        <a href="javascript:void(0);" class="a-button a-button--facebook has-icon" aria-label="Facebook">
+                            <span class="fa fa-facebook" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="a-button a-button--twitter has-icon" aria-label="Twitter">
+                            <span class="fa fa-twitter" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="a-button a-button--linkedin has-icon" aria-label="LinkedIn">
+                            <span class="fa fa-linkedin" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="a-button a-button--instagram has-icon" aria-label="Instagram">
+                            <span class="fa fa-instagram" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="a-button a-button--google has-icon" aria-label="Google+">
+                            <span class="fa fa-google-plus" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="a-button a-button--snapchat has-icon" aria-label="Snapchat">
+                            <span class="fa fa-snapchat-ghost" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-button-list"&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--facebook has-icon" aria-label="Facebook"&gt;&lt;span class="fa fa-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--twitter has-icon" aria-label="Twitter"&gt;&lt;span class="fa fa-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--linkedin has-icon" aria-label="LinkedIn"&gt;&lt;span class="fa fa-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--instagram has-icon" aria-label="Instagram"&gt;&lt;span class="fa fa-instagram" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--google has-icon" aria-label="Google+"&gt;&lt;span class="fa fa-google-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--snapchat has-icon" aria-label="Snapchat"&gt;&lt;span class="fa fa-snapchat-ghost" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <ul class="m-button-list m-button-list--horizontal">
+                    <li>
+                        <a href="javascript:void(0);" class="a-button a-button--facebook has-icon" aria-label="Facebook">
+                            <span class="fa fa-facebook" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="a-button a-button--twitter has-icon" aria-label="Twitter">
+                            <span class="fa fa-twitter" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="a-button a-button--linkedin has-icon" aria-label="LinkedIn">
+                            <span class="fa fa-linkedin" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="a-button a-button--instagram has-icon" aria-label="Instagram">
+                            <span class="fa fa-instagram" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="a-button a-button--google has-icon" aria-label="Google+">
+                            <span class="fa fa-google-plus" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="a-button a-button--snapchat has-icon" aria-label="Snapchat">
+                            <span class="fa fa-snapchat-ghost" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-button-list m-button-list--horizontal"&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--facebook has-icon" aria-label="Facebook"&gt;&lt;span class="fa fa-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--twitter has-icon" aria-label="Twitter"&gt;&lt;span class="fa fa-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--linkedin has-icon" aria-label="LinkedIn"&gt;&lt;span class="fa fa-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--instagram has-icon" aria-label="Instagram"&gt;&lt;span class="fa fa-instagram" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--google has-icon" aria-label="Google+"&gt;&lt;span class="fa fa-google-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--snapchat has-icon" aria-label="Snapchat"&gt;&lt;span class="fa fa-snapchat-ghost" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-card" aria-label="Card"></a>
+        <h3 class="u-margin-top-lg">Card</h3>
+        <span class="d-file">molecules/molecules.card</span>
+        <div class="d">
+            <div>
+                <div class="m-card">
+                    <div class="m-card__header">
+                        <div class="m-contact">
+                            <div class="a-avatar a-avatar--small">
+                                <img src="https://robohash.org/vergilius" alt="Avatar image." />
+                            </div>
+                            <div class="m-contact__info">
+                                <p class="u-text-bold">Publius Vergilius Maro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-card__image">
+                        <img src="https://placeimg.com/1000/500/tech" alt="Card image.">
+                    </div>
+                    <div class="m-card__body">
+                        <h4 id="card-title" class="h5 u-margin-bottom-xs">Aeneis</h4>
+                        <p class="small u-text-bold u-margin-bottom-xs">May 4th 2017, 12:34</p>
+                        <p class="u-margin-bottom">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram. Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</p>
+                        <p class="u-text-right">
+                            <a id="card-link" href="javascript:void(0);" class="has-icon-right" aria-labelledby="card-link card-title">
+                                Read the article<span class="fa fa-angle-right" aria-hidden="true"></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-card"&gt;
+  &lt;div class="m-card__header"&gt;
+    &lt;div class="m-contact"&gt;
+      &lt;div class="a-avatar a-avatar--small"&gt;
+        &lt;img src="https://robohash.org/vergilius" alt="Avatar image." /&gt;
+      &lt;/div&gt;
+      &lt;div class="m-contact__info"&gt;
+        &lt;p class="u-text-bold"&gt;Publius Vergilius Maro&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="m-card__image"&gt;
+    &lt;img src="https://placeimg.com/1000/500/tech" alt="Card image."&gt;
+  &lt;/div&gt;
+  &lt;div class="m-card__body"&gt;
+    &lt;h4 id="card-title" class="h5 u-margin-bottom-xs"&gt;Aeneis&lt;/h4&gt;
+    &lt;p class="small u-text-bold u-margin-bottom-xs"&gt;May 4th 2017, 12:34&lt;/p&gt;
+    &lt;p class="u-margin-bottom"&gt;...&lt;/p&gt;
+    &lt;p class="u-text-right"&gt;
+      &lt;a id="card-link" href="#" class="has-icon-right" aria-labelledby="card-link card-title"&gt;
+        Read more&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-collapsible-list" aria-label="Collapsible list"></a>
+        <h3 class="u-margin-top-lg">Collapsible list</h3>
+        <span class="d-file">molecules/molecules.collapsible-list</span>
+        <div class="d">
+            <div>
+                <ul class="m-collapsible-list">
+                    <li class="m-collapsible-list__item">
+                        <a href="void(0);">
+                            <span>First item</span>
+                        </a>
+                    </li>
+                    <li class="m-collapsible-list__item">
+                        <a href="void(0);">
+                            <span class="fa fa-fw fa-angle-down" aria-hidden="true"></span><span>Second collapsible item</span>
+                        </a>
+                        <ul>
+                            <li class="m-collapsible-list__item">
+                                <a href="void(0);">
+                                    <span class="fa fa-fw fa-angle-down" aria-hidden="true"></span><span>First collapsible subitem</span>
+                                </a>
+                                <ul>
+                                    <li class="m-collapsible-list__item is-active">
+                                        <a href="void(0);">
+                                            <span>First active subsubitem</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="m-collapsible-list__item">
+                                <a href="void(0);">
+                                    <span class="fa fa-fw fa-angle-right" aria-hidden="true"></span><span>Second collapsed subitem</span>
+                                </a>
+                                <ul class="is-collapsed">
+                                    <li class="m-collapsible-list__item">
+                                        <a href="void(0);">
+                                            <span>Second hidden subsubitem</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-collapsible-list"&gt;
+  &lt;li class="m-collapsible-list__item"&gt;
+    &lt;a href="#"&gt;
+      &lt;span&gt;First item&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="m-collapsible-list__item"&gt;
+    &lt;a href="#"&gt;
+      &lt;span class="fa fa-fw fa-angle-down" aria-hidden="true"&gt;&lt;/span&gt;&lt;span&gt;Second collapsible item&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li class="m-collapsible-list__item"&gt;
+        &lt;a href="#"&gt;
+          &lt;span class="fa fa-fw fa-angle-down" aria-hidden="true"&gt;&lt;/span&gt;&lt;span&gt;First collapsible subitem&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li class="m-collapsible-list__item is-active"&gt;
+            &lt;a href="#"&gt;
+              &lt;span&gt;First active subsubitem&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class="m-collapsible-list__item"&gt;
+        &lt;a href="#"&gt;
+          &lt;span class="fa fa-fw fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;span&gt;Second collapsed subitem&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;ul class="is-collapsed"&gt;
+          &lt;li class="m-collapsible-list__item"&gt;
+            &lt;a href="#"&gt;
+              &lt;span&gt;Second hidden subsubitem&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-contact" aria-label="Contact"></a>
+        <h3 class="u-margin-top-lg">Contact</h3>
+        <span class="d-file">molecules/molecules.contact</span>
+        <div class="d">
+            <div>
+                <div class="m-contact u-margin-bottom">
+                    <div class="a-avatar a-avatar--small">
+                        <img src="https://robohash.org/jasper" alt="Avatar image." />
+                    </div>
+                    <div class="m-contact__info">
+                        <p class="u-text-bold">Jasper Van Proeyen</p>
+                    </div>
+                </div>
+                <div class="m-contact">
+                    <div class="a-avatar a-avatar--small">
+                        <img src="https://robohash.org/sander" alt="Avatar image." />
+                    </div>
+                    <div class="m-contact__info">
+                        <p class="u-text-bold">Sander Geenen</p>
+                        <p class="small">1 min ago</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-contact"&gt;
+  &lt;div class="a-avatar a-avatar--small"&gt;
+    &lt;img src="https://robohash.org/jasper" alt="Avatar image." /&gt;
+  &lt;/div&gt;
+  &lt;div class="m-contact__info"&gt;
+    &lt;p class="u-text-bold"&gt;Jasper Van Proeyen&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-contact"&gt;
+  &lt;div class="a-avatar a-avatar--small"&gt;
+    &lt;img src="https://robohash.org/sander" alt="Avatar image." /&gt;
+  &lt;/div&gt;
+  &lt;div class="m-contact__info"&gt;
+    &lt;p class="u-text-bold"&gt;Sander Geenen&lt;/p&gt;
+    &lt;p class="small"&gt;1 min ago&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-contact u-margin-bottom">
+                    <div class="a-avatar">
+                        <img src="https://robohash.org/jasper" alt="Avatar image." />
+                    </div>
+                    <div class="m-contact__info">
+                        <p class="u-text-bold">Jasper Van Proeyen</p>
+                    </div>
+                </div>
+                <div class="m-contact">
+                    <div class="a-avatar">
+                        <img src="https://robohash.org/sander" alt="Avatar image." />
+                    </div>
+                    <div class="m-contact__info">
+                        <p class="u-text-bold">Sander Geenen</p>
+                        <p class="small">1 min ago</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-contact"&gt;
+  &lt;div class="a-avatar"&gt;
+    &lt;img src="https://robohash.org/jasper" alt="Avatar image." /&gt;
+  &lt;/div&gt;
+  &lt;div class="m-contact__info"&gt;
+    &lt;p class="u-text-bold"&gt;Jasper Van Proeyen&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-contact"&gt;
+  &lt;div class="a-avatar"&gt;
+    &lt;img src="https://robohash.org/sander" alt="Avatar image." /&gt;
+  &lt;/div&gt;
+  &lt;div class="m-contact__info"&gt;
+    &lt;p class="u-text-bold"&gt;Sander Geenen&lt;/p&gt;
+    &lt;p class="small"&gt;1 min ago&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-datepicker" aria-label="Datepicker"></a>
+        <h3 class="u-margin-top-lg">Datepicker</h3>
+        <span class="d-file">molecules/molecules.datepicker</span>
+        <h4 class="u-margin-top-lg">Datepicker views</h4>
+        <div class="d">
+            <div>
+                <div role="application" aria-label="Datepicker days" class="m-datepicker is-open" aria-hidden="false">
+                    <div class="m-datepicker__nav">
+                        <button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"><span class="fa fa-angle-left" aria-hidden="true"></span></button>
+                        <button type="button" class="m-datepicker__title a-button">May 2017</button>
+                        <button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon"><span class="fa fa-angle-right" aria-hidden="true"></span></button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr class="m-datepicker__days">
+                                <th scope="col"><span title="Monday">Mo</span></th>
+                                <th scope="col"><span title="Tuesday">Tu</span></th>
+                                <th scope="col"><span title="Wednesday">We</span></th>
+                                <th scope="col"><span title="Thursday">Th</span></th>
+                                <th scope="col"><span title="Friday">Fr</span></th>
+                                <th scope="col"><span title="Saturday">Sa</span></th>
+                                <th scope="col"><span title="Sunday">Su</span></th>
+                            </tr>
+                        </thead>
+                        <tbody class="m-datepicker__calendar">
+                            <tr>
+                                <td><button type="button" class="is-faded" aria-label="Monday 27 April 2017">27</button></td>
+                                <td><button type="button" class="is-faded" aria-label="Tuesday 28 April 2017">28</button></td>
+                                <td><button type="button" aria-label="Wednesday 1 May 2017">1</button></td>
+                                <td><button type="button" aria-label="Thursday 2 May 2017">2</button></td>
+                                <td><button type="button" aria-label="Friday 3 May 2017">3</button></td>
+                                <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 4 May 2017">4</button></td>
+                                <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 5 May 2017">5</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" aria-label="Monday 6 May 2017">6</button></td>
+                                <td><button type="button" aria-label="Tuesday 7 May 2017">7</button></td>
+                                <td><button type="button" aria-label="Wednesday 8 May 2017">8</button></td>
+                                <td><button type="button" class="is-selected" aria-pressed="true" aria-label="Thursday 9 May 2017">9</button></td>
+                                <td><button type="button" aria-label="Friday 10 May 2017">10</button></td>
+                                <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 11 May 2017">11</button></td>
+                                <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 12 May 2017">12</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" aria-label="Monday 13 May 2017">13</button></td>
+                                <td><button type="button" aria-label="Tuesday 14 May 2017">14</button></td>
+                                <td><button type="button" aria-label="Wednesday 15 May 2017">15</button></td>
+                                <td><button type="button" aria-label="Thursday 16 May 2017">16</button></td>
+                                <td><button type="button" aria-label="Friday 17 May 2017">17</button></td>
+                                <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 18 May 2017">18</button></td>
+                                <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 19 May 2017">19</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" aria-label="Monday 20 May 2017">20</button></td>
+                                <td><button type="button" class="is-current" aria-label="Tuesday 21 May 2017">21</button></td>
+                                <td><button type="button" aria-label="Wednesday 22 May 2017">22</button></td>
+                                <td><button type="button" aria-label="Thursday 23 May 2017">23</button></td>
+                                <td><button type="button" aria-label="Friday 24 May 2017">24</button></td>
+                                <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 25 May 2017">25</button></td>
+                                <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 26 May 2017">26</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" aria-label="Monday 27 May 2017">27</button></td>
+                                <td><button type="button" aria-label="Tuesday 28 May 2017">28</button></td>
+                                <td><button type="button" aria-label="Wednesday 29 May 2017">29</button></td>
+                                <td><button type="button" aria-label="Thursday 30 May 2017">30</button></td>
+                                <td><button type="button" aria-label="Friday 31 May 2017">31</button></td>
+                                <td><button type="button" class="is-faded" aria-label="Saturday 1 June 2017">1</button></td>
+                                <td><button type="button" class="is-faded" aria-label="Sunday 2 June 2017">2</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="application" aria-label="Datepicker days" class="m-datepicker is-open" aria-hidden="false"&gt;
+  &lt;div class="m-datepicker__nav"&gt;
+    &lt;button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" class="m-datepicker__title a-button"&gt;May 2017&lt;/button&gt;
+    &lt;button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr class="m-datepicker__days"&gt;
+        &lt;th scope="col"&gt;&lt;span title="Monday"&gt;Mo&lt;/span&gt;&lt;/th&gt;
+        &lt;th scope="col"&gt;&lt;span title="Tuesday"&gt;Tu&lt;/span&gt;&lt;/th&gt;
+        &lt;th scope="col"&gt;&lt;span title="Wednesday"&gt;We&lt;/span&gt;&lt;/th&gt;
+        &lt;th scope="col"&gt;&lt;span title="Thursday"&gt;Th&lt;/span&gt;&lt;/th&gt;
+        &lt;th scope="col"&gt;&lt;span title="Friday"&gt;Fr&lt;/span&gt;&lt;/th&gt;
+        &lt;th scope="col"&gt;&lt;span title="Saturday"&gt;Sa&lt;/span&gt;&lt;/th&gt;
+        &lt;th scope="col"&gt;&lt;span title="Sunday"&gt;Su&lt;/span&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody class="m-datepicker__calendar"&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;button type="button" class="is-faded" aria-label="Monday 27 April 2017"&gt;27&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-faded" aria-label="Tuesday 28 April 2017"&gt;28&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Wednesday 1 May 2017"&gt;1&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Thursday 2 May 2017"&gt;2&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Friday 3 May 2017"&gt;3&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 4 May 2017"&gt;4&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 5 May 2017"&gt;5&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Monday 6 May 2017"&gt;6&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Tuesday 7 May 2017"&gt;7&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Wednesday 8 May 2017"&gt;8&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-selected" aria-pressed="true" aria-label="Thursday 9 May 2017"&gt;9&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Friday 10 May 2017"&gt;10&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 11 May 2017"&gt;11&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 12 May 2017"&gt;12&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Monday 13 May 2017"&gt;13&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Tuesday 14 May 2017"&gt;14&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Wednesday 15 May 2017"&gt;15&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Thursday 16 May 2017"&gt;16&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Friday 17 May 2017"&gt;17&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 18 May 2017"&gt;18&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 19 May 2017"&gt;19&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Monday 20 May 2017"&gt;20&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-current" aria-label="Tuesday 21 May 2017"&gt;21&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Wednesday 22 May 2017"&gt;22&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Thursday 23 May 2017"&gt;23&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Friday 24 May 2017"&gt;24&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 25 May 2017"&gt;25&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 26 May 2017"&gt;26&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Monday 27 May 2017"&gt;27&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Tuesday 28 May 2017"&gt;28&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Wednesday 29 May 2017"&gt;29&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Thursday 30 May 2017"&gt;30&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="Friday 31 May 2017"&gt;31&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-faded" aria-label="Saturday 1 June 2017"&gt;1&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" class="is-faded" aria-label="Sunday 2 June 2017"&gt;2&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div role="application" aria-label="Datepicker months" class="m-datepicker is-open" aria-hidden="false">
+                    <div class="m-datepicker__nav">
+                        <button type="button" aria-label="Go to previous year (2016)" class="a-button has-icon"><span class="fa fa-angle-left" aria-hidden="true"></span></button>
+                        <button type="button" class="m-datepicker__title a-button">2017</button>
+                        <button type="button" aria-label="Go to next year (2018)" class="a-button has-icon"><span class="fa fa-angle-right" aria-hidden="true"></span></button>
+                    </div>
+                    <table>
+                        <tbody class="m-datepicker__calendar">
+                            <tr>
+                                <td><button type="button" aria-label="January 2017">Jan</button></td>
+                                <td><button type="button" aria-label="February 2017">Feb</button></td>
+                                <td><button type="button" aria-label="March 2017">Mar</button></td>
+                                <td><button type="button" aria-label="April 2017">Apr</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" aria-label="May 2017">May</button></td>
+                                <td><button type="button" aria-label="June 2017">Jun</button></td>
+                                <td><button type="button" aria-label="July 2017">Jul</button></td>
+                                <td><button type="button" aria-label="August 2017">Aug</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" aria-label="September 2017">Sep</button></td>
+                                <td><button type="button" aria-label="October 2017">Oct</button></td>
+                                <td><button type="button" aria-label="November 2017">Nov</button></td>
+                                <td><button type="button" aria-label="December 2017">Dec</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="application" aria-label="Datepicker months" class="m-datepicker is-open" aria-hidden="false"&gt;
+  &lt;div class="m-datepicker__nav"&gt;
+    &lt;button type="button" aria-label="Go to previous year (2016)" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" class="m-datepicker__title a-button"&gt;2017&lt;/button&gt;
+    &lt;button type="button" aria-label="Go to next year (2018)" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;table&gt;
+    &lt;tbody class="m-datepicker__calendar"&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="January 2017"&gt;Jan&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="February 2017"&gt;Feb&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="March 2017"&gt;Mar&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="April 2017"&gt;Apr&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="May 2017"&gt;May&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="June 2017"&gt;Jun&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="July 2017"&gt;Jul&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="August 2017"&gt;Aug&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="September 2017"&gt;Sep&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="October 2017"&gt;Oct&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="November 2017"&gt;Nov&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button" aria-label="December 2017"&gt;Dec&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div role="application" aria-label="Datepicker years" class="m-datepicker is-open" aria-hidden="false">
+                    <div class="m-datepicker__nav">
+                        <button type="button" aria-label="Go back 12 years (1995-2006)" class="a-button has-icon"><span class="fa fa-angle-left" aria-hidden="true"></span></button>
+                        <button type="button" class="m-datepicker__title a-button">2007 - 2018</button>
+                        <button type="button" aria-label="Go forward 12 years (2019-2030)" class="a-button has-icon"><span class="fa fa-angle-right" aria-hidden="true"></span></button>
+                    </div>
+                    <table>
+                        <tbody class="m-datepicker__calendar">
+                            <tr>
+                                <td><button type="button">2007</button></td>
+                                <td><button type="button">2008</button></td>
+                                <td><button type="button">2009</button></td>
+                                <td><button type="button">2010</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button">2011</button></td>
+                                <td><button type="button">2012</button></td>
+                                <td><button type="button">2013</button></td>
+                                <td><button type="button">2014</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button">2015</button></td>
+                                <td><button type="button">2016</button></td>
+                                <td><button type="button">2017</button></td>
+                                <td><button type="button">2018</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="application" aria-label="Datepicker years" class="m-datepicker is-open" aria-hidden="false"&gt;
+  &lt;div class="m-datepicker__nav"&gt;
+    &lt;button type="button" aria-label="Go back 12 years (1995-2006)" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" class="m-datepicker__title a-button"&gt;2007 - 2018&lt;/button&gt;
+    &lt;button type="button" aria-label="Go forward 12 years (2019-2030)" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;table&gt;
+    &lt;tbody class="m-datepicker__calendar"&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;button type="button"&gt;2007&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button"&gt;2008&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button"&gt;2009&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button"&gt;2010&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;button type="button"&gt;2011&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button"&gt;2012&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button"&gt;2013&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button"&gt;2014&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;button type="button"&gt;2015&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button"&gt;2016&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button"&gt;2017&lt;/button&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;button type="button"&gt;2018&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="u-margin-top-lg">Datepicker attached to an input field</h4>
+        <div class="d">
+            <div>
+                <div class="a-input has-icon-right d-datepicker">
+                    <label class="a-input__label" for="input-datepicker">Choose a date</label>
+                    <div class="a-input__wrapper">
+                        <input type="text" name="input-datepicker" id="input-datepicker" placeholder="dd/mm/yyyy" />
+                        <span class="fa fa-calendar is-clickable" role="button" aria-hidden="true" aria-expanded="true"></span>
+                        <div role="application" aria-label="Attached datepicker days" class="m-datepicker m-datepicker--fixed is-open" aria-hidden="false">
+                            <div class="m-datepicker__nav">
+                                <button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"><span class="fa fa-angle-left" aria-hidden="true"></span></button>
+                                <button type="button" class="m-datepicker__title a-button">May 2017</button>
+                                <button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon"><span class="fa fa-angle-right" aria-hidden="true"></span></button>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr class="m-datepicker__days">
+                                        <th scope="col"><span title="Monday">Mo</span></th>
+                                        <th scope="col"><span title="Tuesday">Tu</span></th>
+                                        <th scope="col"><span title="Wednesday">We</span></th>
+                                        <th scope="col"><span title="Thursday">Th</span></th>
+                                        <th scope="col"><span title="Friday">Fr</span></th>
+                                        <th scope="col"><span title="Saturday">Sa</span></th>
+                                        <th scope="col"><span title="Sunday">Su</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="m-datepicker__calendar">
+                                    <tr>
+                                        <td><button type="button" class="is-faded" aria-label="Monday 27 April 2017">27</button></td>
+                                        <td><button type="button" class="is-faded" aria-label="Tuesday 28 April 2017">28</button></td>
+                                        <td><button type="button" aria-label="Wednesday 1 May 2017">1</button></td>
+                                        <td><button type="button" aria-label="Thursday 2 May 2017">2</button></td>
+                                        <td><button type="button" aria-label="Friday 3 May 2017">3</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 4 May 2017">4</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 5 May 2017">5</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button type="button" aria-label="Monday 6 May 2017">6</button></td>
+                                        <td><button type="button" aria-label="Tuesday 7 May 2017">7</button></td>
+                                        <td><button type="button" aria-label="Wednesday 8 May 2017">8</button></td>
+                                        <td><button type="button" class="is-selected" aria-pressed="true" aria-label="Thursday 9 May 2017">9</button></td>
+                                        <td><button type="button" aria-label="Friday 10 May 2017">10</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 11 May 2017">11</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 12 May 2017">12</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button type="button" aria-label="Monday 13 May 2017">13</button></td>
+                                        <td><button type="button" aria-label="Tuesday 14 May 2017">14</button></td>
+                                        <td><button type="button" aria-label="Wednesday 15 May 2017">15</button></td>
+                                        <td><button type="button" aria-label="Thursday 16 May 2017">16</button></td>
+                                        <td><button type="button" aria-label="Friday 17 May 2017">17</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 18 May 2017">18</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 19 May 2017">19</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button type="button" aria-label="Monday 20 May 2017">20</button></td>
+                                        <td><button type="button" class="is-current" aria-label="Tuesday 21 May 2017">21</button></td>
+                                        <td><button type="button" aria-label="Wednesday 22 May 2017">22</button></td>
+                                        <td><button type="button" aria-label="Thursday 23 May 2017">23</button></td>
+                                        <td><button type="button" aria-label="Friday 24 May 2017">24</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 25 May 2017">25</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 26 May 2017">26</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button type="button" aria-label="Monday 27 May 2017">27</button></td>
+                                        <td><button type="button" aria-label="Tuesday 28 May 2017">28</button></td>
+                                        <td><button type="button" aria-label="Wednesday 29 May 2017">29</button></td>
+                                        <td><button type="button" aria-label="Thursday 30 May 2017">30</button></td>
+                                        <td><button type="button" aria-label="Friday 31 May 2017">31</button></td>
+                                        <td><button type="button" class="is-faded" aria-label="Saturday 1 June 2017">1</button></td>
+                                        <td><button type="button" class="is-faded" aria-label="Sunday 2 June 2017">2</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-alert d-alert u-margin-bottom">
+                    <p>In order to make the datepicker visible, just add the <code>.is-open</code> class, as demonstrated in the example.</p>
+                </div>
+                <div class="m-alert d-alert u-margin-bottom">
+                    <p>In the rare case that you want your datepicker to open on the left side of the input field, just add the <code>.m-datepicker--left</code> class.</p>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input has-icon-right"&gt;
+  &lt;label class="a-input__label" for="input-datepicker"&gt;Choose a date&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;input type="text" name="input-datepicker" id="input-datepicker" placeholder="dd/mm/yyyy" /&gt;
+    &lt;span class="fa fa-calendar is-clickable" role="button" aria-hidden="true" aria-expanded="true"&gt;&lt;/span&gt;
+    &lt;div role="application" aria-label="Attached datepicker days" class="m-datepicker m-datepicker--fixed is-open" aria-hidden="false"&gt;
+      &lt;div class="m-datepicker__nav"&gt;
+        &lt;button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="m-datepicker__title a-button"&gt;May 2017&lt;/button&gt;
+        &lt;button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;table&gt;
+        &lt;thead&gt;
+          &lt;tr class="m-datepicker__days"&gt;
+            &lt;th scope="col"&gt;&lt;span title="Monday"&gt;Mo&lt;/span&gt;&lt;/th&gt;
+            &lt;th scope="col"&gt;&lt;span title="Tuesday"&gt;Tu&lt;/span&gt;&lt;/th&gt;
+            &lt;th scope="col"&gt;&lt;span title="Wednesday"&gt;We&lt;/span&gt;&lt;/th&gt;
+            &lt;th scope="col"&gt;&lt;span title="Thursday"&gt;Th&lt;/span&gt;&lt;/th&gt;
+            &lt;th scope="col"&gt;&lt;span title="Friday"&gt;Fr&lt;/span&gt;&lt;/th&gt;
+            &lt;th scope="col"&gt;&lt;span title="Saturday"&gt;Sa&lt;/span&gt;&lt;/th&gt;
+            &lt;th scope="col"&gt;&lt;span title="Sunday"&gt;Su&lt;/span&gt;&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody class="m-datepicker__calendar"&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;button type="button" class="is-faded" aria-label="Monday 27 April 2017"&gt;27&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-faded" aria-label="Tuesday 28 April 2017"&gt;28&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Wednesday 1 May 2017"&gt;1&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Thursday 2 May 2017"&gt;2&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Friday 3 May 2017"&gt;3&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 4 May 2017"&gt;4&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 5 May 2017"&gt;5&lt;/button&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Monday 6 May 2017"&gt;6&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Tuesday 7 May 2017"&gt;7&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Wednesday 8 May 2017"&gt;8&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-selected" aria-pressed="true" aria-label="Thursday 9 May 2017"&gt;9&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Friday 10 May 2017"&gt;10&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 11 May 2017"&gt;11&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 12 May 2017"&gt;12&lt;/button&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Monday 13 May 2017"&gt;13&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Tuesday 14 May 2017"&gt;14&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Wednesday 15 May 2017"&gt;15&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Thursday 16 May 2017"&gt;16&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Friday 17 May 2017"&gt;17&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 18 May 2017"&gt;18&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 19 May 2017"&gt;19&lt;/button&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Monday 20 May 2017"&gt;20&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-current" aria-label="Tuesday 21 May 2017"&gt;21&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Wednesday 22 May 2017"&gt;22&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Thursday 23 May 2017"&gt;23&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Friday 24 May 2017"&gt;24&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 25 May 2017"&gt;25&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 26 May 2017"&gt;26&lt;/button&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Monday 27 May 2017"&gt;27&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Tuesday 28 May 2017"&gt;28&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Wednesday 29 May 2017"&gt;29&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Thursday 30 May 2017"&gt;30&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" aria-label="Friday 31 May 2017"&gt;31&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-faded" aria-label="Saturday 1 June 2017"&gt;1&lt;/button&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;button type="button" class="is-faded" aria-label="Sunday 2 June 2017"&gt;2&lt;/button&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">// To open your datepicker on the left side of your input field
+...
+&lt;div role="datepicker" class="m-datepicker m-datepicker--left is-open m-datepicker--fixed" aria-hidden="false"&gt;
+...</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-flyout" aria-label="Flyout"></a>
+        <h3 class="u-margin-top-lg">Flyout</h3>
+        <span class="d-file">atoms/atoms.flyout</span>
+        <h4 class="u-margin-top-lg">Default flyout</h4>
+        <div class="d">
+            <div>
+                <div class="m-flyout is-open d-flyout">
+                    <button class="a-button" aria-expanded="true">Default flyout</button>
+                    <div class="m-flyout__content has-padding">
+                        <p>The default flyout will never be bigger than the element that triggers it.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout is-open"&gt;
+  &lt;button class="a-button" aria-expanded="true"&gt;Default flyout&lt;/button&gt;
+  &lt;div class="m-flyout__content has-padding"&gt;
+    &lt;p&gt;The default flyout will never be bigger than the element that triggers it.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="u-margin-top-lg">Flyout sizes</h4>
+        <div class="d">
+            <div>
+                <div>
+                    <div class="m-flyout m-flyout--sm is-open d-flyout--sm">
+                        <button class="a-button" aria-expanded="true">Small flyout</button>
+                        <div class="m-flyout__content has-padding">
+                            <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="m-flyout m-flyout--md is-open d-flyout--md">
+                        <button class="a-button" aria-expanded="true">Medium flyout</button>
+                        <div class="m-flyout__content has-padding">
+                            <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="m-flyout m-flyout--lg is-open d-flyout--lg">
+                        <button class="a-button" aria-expanded="true">Large flyout</button>
+                        <div class="m-flyout__content has-padding">
+                            <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="m-flyout m-flyout--full is-open d-flyout--full">
+                        <button class="a-button">The full flyout will be as wide as</button>
+                        <div class="m-flyout__content has-padding" aria-expanded="true">
+                            <p>… the element that triggers it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--sm is-open"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--md is-open"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--lg is-open"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--full is-open"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="u-margin-top-lg">Flyout options</h4>
+        <div class="d">
+            <div class="u-text-right">
+                <div class="m-flyout m-flyout--md m-flyout--right is-open d-flyout--md">
+                    <button class="a-button" aria-expanded="true">Flyout to the right</button>
+                    <div class="m-flyout__content has-padding">
+                        <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--right m-flyout--md is-open"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-flyout m-flyout--sm is-open d-flyout--no-padding">
+                    <button class="a-button" aria-expanded="true">Flyout without padding</button>
+                    <div class="m-flyout__content">
+                        <p>No padding here.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--sm is-open d-flyout--md"&gt;
+  &lt;button class="a-button" aria-expanded="true"&gt;Flyout without padding&lt;/button&gt;
+  &lt;div class="m-flyout__content"&gt;
+    &lt;p&gt;No padding here.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-flyout m-flyout--full m-flyout--scrollable is-open d-flyout--sm">
+                    <label class="a-input__label" for="input-autocomplete">Flyout as an autocomplete</label>
+                    <div class="a-input">
+                        <input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" aria-expanded="true" />
+                    </div>
+                    <div class="m-flyout__content">
+                        <ul class="m-selectable-list m-selectable-list--no-border">
+                            <li><a class="m-selectable-list__item" href="#">Take</a></li>
+                            <li><a class="m-selectable-list__item" href="#">A</a></li>
+                            <li><a class="m-selectable-list__item" href="#">Look</a></li>
+                            <li><a class="m-selectable-list__item" href="#">At</a></li>
+                            <li><a class="m-selectable-list__item" href="#">This</a></li>
+                            <li><a class="m-selectable-list__item" href="#">Scroll</a></li>
+                            <li><a class="m-selectable-list__item" href="#">Behaviour</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--full m-flyout--scrollable is-open"&gt;
+  &lt;label class="a-input__label" for="input-autocomplete"&gt;Flyout as an autocomplete&lt;/label&gt;
+  &lt;div class="a-input"&gt;
+    &lt;input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" aria-expanded="true" /&gt;
+  &lt;/div&gt;
+  &lt;div class="m-flyout__content"&gt;
+    &lt;ul class="m-selectable-list m-selectable-list--no-border"&gt;
+      &lt;li&gt;...&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-alert d-alert u-margin-bottom">
+                    <p>Sometimes you might want to programmatically open the flyout above your clicked element (e.g. when you're at the end of the page and there is no free space below enough). To fix the dropshadow when doing this, add the <code>.opens-above</code> class to your flyout.</p>
+                </div>
+                <div class="m-flyout m-flyout--md is-open opens-above d-flyout--opens-above">
+                  <div class="m-flyout__content has-padding">
+                    <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout is-open opens-above"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-gallery" aria-label="Gallery"></a>
+        <h3 class="u-margin-top-lg">Gallery</h3>
+        <span class="d-file">molecules/molecules.gallery</span>
+        <div class="d">
+            <div>
+                <ul class="m-gallery">
+                    <li class="m-gallery__item m-gallery__item--preview">
+                        <a rel="gallery" href="https://placeimg.com/1000/600/tech" title="Item 1">
+                            <img src="https://placeimg.com/1000/600/tech" alt="Gallery image 1.">
+                        </a>
+                    </li>
+                    <li class="m-gallery__item">
+                        <a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 2">
+                            <img src="https://placeimg.com/320/320/tech" alt="Gallery image 2.">
+                        </a>
+                    </li>
+                    <li class="m-gallery__item">
+                        <a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 3">
+                            <img src="https://placeimg.com/320/320/tech" alt="Gallery image 3.">
+                        </a>
+                    </li>
+                    <li class="m-gallery__item">
+                        <a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 4">
+                            <img src="https://placeimg.com/320/320/tech" alt="Gallery image 4.">
+                        </a>
+                    </li>
+                    <li class="m-gallery__item">
+                        <a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 5">
+                            <img src="https://placeimg.com/320/320/tech" alt="Gallery image 5.">
+                        </a>
+                    </li>
+                    <li class="m-gallery__item">
+                        <a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 6">
+                            <img src="https://placeimg.com/320/320/tech" alt="Gallery image 6.">
+                        </a>
+                    </li>
+                    <li class="m-gallery__item">
+                        <a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 7">
+                            <img src="https://placeimg.com/320/320/tech" alt="Gallery image 7.">
+                        </a>
+                    </li>
+                    <li class="m-gallery__item">
+                        <a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 8">
+                            <img src="https://placeimg.com/320/320/tech" alt="Gallery image 8.">
+                        </a>
+                    </li>
+                    <li class="m-gallery__item">
+                        <a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 9">
+                            <img src="https://placeimg.com/320/320/tech" alt="Gallery image 9.">
+                        </a>
+                    </li>
+                    <li class="m-gallery__item">
+                        <a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 10">
+                            <img src="https://placeimg.com/320/320/tech" alt="Gallery image 10.">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-gallery"&gt;
+  &lt;li class="m-gallery__item m-gallery__item--preview"&gt;
+    &lt;a rel="gallery" href="https://placeimg.com/1000/600/tech" title="Item 1"&gt;
+      &lt;img src="https://placeimg.com/1000/600/tech" alt="Gallery image 1."&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="m-gallery__item"&gt;
+    &lt;a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 2"&gt;
+      &lt;img src="https://placeimg.com/320/320/tech" alt="Gallery image 2."&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="m-gallery__item"&gt;
+    &lt;a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 3"&gt;
+      &lt;img src="https://placeimg.com/320/320/tech" alt="Gallery image 3."&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="m-gallery__item"&gt;
+    &lt;a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 4"&gt;
+      &lt;img src="https://placeimg.com/320/320/tech" alt="Gallery image 4."&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="m-gallery__item"&gt;
+    &lt;a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 5"&gt;
+      &lt;img src="https://placeimg.com/320/320/tech" alt="Gallery image 5."&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="m-gallery__item"&gt;
+    &lt;a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 6"&gt;
+      &lt;img src="https://placeimg.com/320/320/tech" alt="Gallery image 6."&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="m-gallery__item"&gt;
+    &lt;a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 7"&gt;
+      &lt;img src="https://placeimg.com/320/320/tech" alt="Gallery image 7."&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="m-gallery__item"&gt;
+    &lt;a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 8"&gt;
+      &lt;img src="https://placeimg.com/320/320/tech" alt="Gallery image 8."&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="m-gallery__item"&gt;
+    &lt;a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 9"&gt;
+      &lt;img src="https://placeimg.com/320/320/tech" alt="Gallery image 9."&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="m-gallery__item"&gt;
+    &lt;a rel="gallery" href="https://placeimg.com/320/320/tech" title="Item 10"&gt;
+      &lt;img src="https://placeimg.com/320/320/tech" alt="Gallery image 10."&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-icon-list" aria-label="Icon list"></a>
+        <h3 class="u-margin-top-lg">Icon list</h3>
+        <span class="d-file">molecules/molecules.icon-list</span>
+        <div class="m-alert d-alert m-alert--wcag">
+            <p><span class="u-screen-reader-only">Accessibility note. </span>Make sure there is enough contrast between the icon list and the background. See the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum" title="Web Content Accessibility Guidelines (WCAG) 2.1 Success Criterion 1.4.3 Contrast (Minimum)" class="has-icon-right" target="_blank">contrast success criterion<span class="fa fa-external-link" aria-hidden="true"></span><span class="u-screen-reader-only"> (external)</span></a>.</p>
+        </div>
+        <div class="d">
+            <div>
+                <ul class="m-icon-list">
+                    <li><a href="javascript:void(0);" aria-label="Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+                    <li><a href="javascript:void(0);" aria-label="Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+                    <li><a href="javascript:void(0);" aria-label="LinkedIn"><span class="fa fa-linkedin" aria-hidden="true"></span></a></li>
+                    <li><a href="javascript:void(0);" aria-label="Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
+                    <li><a href="javascript:void(0);" aria-label="Google+"><span class="fa fa-google-plus" aria-hidden="true"></span></a></li>
+                    <li><a href="javascript:void(0);" aria-label="Snapchat"><span class="fa fa-snapchat-ghost" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-icon-list"&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;&lt;span class="fa fa-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;&lt;span class="fa fa-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="LinkedIn"&gt;&lt;span class="fa fa-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Instagram"&gt;&lt;span class="fa fa-instagram" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Google+"&gt;&lt;span class="fa fa-google-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Snapchat"&gt;&lt;span class="fa fa-snapchat-ghost" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="u-bg-black">
+                    <ul class="m-icon-list m-icon-list--negative d-icon-list">
+                        <li><a href="javascript:void(0);" aria-label="Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+                        <li><a href="javascript:void(0);" aria-label="Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+                        <li><a href="javascript:void(0);" aria-label="LinkedIn"><span class="fa fa-linkedin" aria-hidden="true"></span></a></li>
+                        <li><a href="javascript:void(0);" aria-label="Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
+                        <li><a href="javascript:void(0);" aria-label="Google+"><span class="fa fa-google-plus" aria-hidden="true"></span></a></li>
+                        <li><a href="javascript:void(0);" aria-label="Snapchat"><span class="fa fa-snapchat-ghost" aria-hidden="true"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-icon-list m-icon-list--negative"&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;&lt;span class="fa fa-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;&lt;span class="fa fa-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="LinkedIn"&gt;&lt;span class="fa fa-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Instagram"&gt;&lt;span class="fa fa-instagram" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Google+"&gt;&lt;span class="fa fa-google-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Snapchat"&gt;&lt;span class="fa fa-snapchat-ghost" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <ul class="m-icon-list m-icon-list--horizontal">
+                    <li><a href="javascript:void(0);" aria-label="Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+                    <li><a href="javascript:void(0);" aria-label="Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+                    <li><a href="javascript:void(0);" aria-label="LinkedIn"><span class="fa fa-linkedin" aria-hidden="true"></span></a></li>
+                    <li><a href="javascript:void(0);" aria-label="Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
+                    <li><a href="javascript:void(0);" aria-label="Google+"><span class="fa fa-google-plus" aria-hidden="true"></span></a></li>
+                    <li><a href="javascript:void(0);" aria-label="Snapchat"><span class="fa fa-snapchat-ghost" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-icon-list m-icon-list--horizontal"&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;&lt;span class="fa fa-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;&lt;span class="fa fa-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="LinkedIn"&gt;&lt;span class="fa fa-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Instagram"&gt;&lt;span class="fa fa-instagram" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Google+"&gt;&lt;span class="fa fa-google-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Snapchat"&gt;&lt;span class="fa fa-snapchat-ghost" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="u-bg-black">
+                    <ul class="m-icon-list m-icon-list--horizontal m-icon-list--negative d-icon-list">
+                        <li><a href="javascript:void(0);" aria-label="Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+                        <li><a href="javascript:void(0);" aria-label="Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+                        <li><a href="javascript:void(0);" aria-label="LinkedIn"><span class="fa fa-linkedin" aria-hidden="true"></span></a></li>
+                        <li><a href="javascript:void(0);" aria-label="Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
+                        <li><a href="javascript:void(0);" aria-label="Google+"><span class="fa fa-google-plus" aria-hidden="true"></span></a></li>
+                        <li><a href="javascript:void(0);" aria-label="Snapchat"><span class="fa fa-snapchat-ghost" aria-hidden="true"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-icon-list m-icon-list--horizontal m-icon-list--negative"&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;&lt;span class="fa fa-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;&lt;span class="fa fa-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="LinkedIn"&gt;&lt;span class="fa fa-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Instagram"&gt;&lt;span class="fa fa-instagram" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Google+"&gt;&lt;span class="fa fa-google-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Snapchat"&gt;&lt;span class="fa fa-snapchat-ghost" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-image" aria-label="Image"></a>
+        <h3 class="u-margin-top-lg">Image</h3>
+        <span class="d-file">molecules/molecules.image</span>
+        <div class="d">
+            <div>
+                <figure class="m-image">
+                    <img src="https://placeimg.com/1000/500/tech" alt="Figure image.">
+                </figure>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;figure class="m-image"&gt;
+  &lt;img src="https://placeimg.com/1000/500/tech" alt="Figure image."&gt;
+&lt;/figure&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <figure class="m-image">
+                    <img src="https://placeimg.com/1000/500/tech" alt="Figure image.">
+                    <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-expanded="true">
+                        <div class="a-copyright__sign">
+                            <span class="fa fa-copyright" aria-hidden="true"></span>
+                            <span class="u-screen-reader-only">Copyright </span>
+                        </div>
+                        <span class="a-copyright__label">Lorem Pixel</span>
+                    </a>
+                </figure>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;figure class="m-image"&gt;
+  &lt;img src="https://placeimg.com/1000/500/tech" alt="Figure image."&gt;
+  &lt;a href="#" class="m-image__copyright a-copyright" aria-expanded="true"&gt;
+    &lt;div class="a-copyright__sign"&gt;
+      &lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span class="u-screen-reader-only"&gt;Copyright &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;</code></pre>
+                <div class="m-alert d-alert">
+                    <p>Note that you need to add/remove the <code>aria-expanded</code> attribute programmatically.</p>
+                </div>
+            </div>
+        </div>
+
+        <a name="molecules-modal" aria-label="Modal"></a>
+        <h3 class="u-margin-top-lg">Modal</h3>
+        <span class="d-file">molecules/molecules.modal</span>
+        <div class="m-alert d-alert m-alert--wcag">
+            <p><span class="u-screen-reader-only">Accessibility note. </span>Note that <a href="https://www.w3.org/TR/wai-aria-practices-1.2/#keyboard-interaction-7" title="WAI-ARIA Authoring Practices 1.2 - 3.9 Dialog (Modal)" class="has-icon-right" target="_blank">focus management is essential<span class="fa fa-external-link" aria-hidden="true"></span><span class="u-screen-reader-only"> (external)</span></a> for a modal dialog to be accessible.</p>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-modal" role="dialog" aria-modal="true" aria-labelledby="myModalTitle" aria-describedby="myModelDesc">
+                    <div class="m-modal__content">
+                        <div class="m-modal__header u-margin-bottom-xs">
+                            <button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
+                            <h4 id="myModalTitle" class="h6">Aeneis</h4>
+                        </div>
+                        <div class="u-margin-bottom">
+                            <p id="myModalDesc">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                        </div>
+                        <div class="m-modal__footer">
+                            <button class="a-button">Got it</button>
+                            <button class="a-button-outline">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-modal" role="dialog" aria-modal="true" aria-labelledby="myModalTitle" aria-describedby="myModelDesc"&gt;
+  &lt;div class="m-modal__content"&gt;
+    &lt;div class="m-modal__header u-margin-bottom-xs"&gt;
+      &lt;button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;h4 id="myModalTitle" class="h6"&gt;Aeneis&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="u-margin-bottom"&gt;
+      &lt;p id="myModalDesc"&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="m-modal__footer"&gt;
+      &lt;button class="a-button"&gt;Got it&lt;/button&gt;
+      &lt;button class="a-button-outline"&gt;Cancel&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-modal m-modal--large" role="dialog" aria-modal="true" aria-labelledby="myLargeModalTitle" aria-describedby="myLargeModelDesc">
+                    <div class="m-modal__content">
+                        <div class="m-modal__header u-margin-bottom-xs">
+                            <button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
+                            <h4 class="h6">Aeneis</h4>
+                        </div>
+                        <div class="u-margin-bottom">
+                            <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                        </div>
+                        <div class="m-modal__footer">
+                            <button class="a-button">Got it</button>
+                            <button class="a-button-outline">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-modal m-modal--large" role="dialog" aria-modal="true" aria-labelledby="myLargeModalTitle" aria-describedby="myLargeModelDesc"&gt;
+  &lt;div class="m-modal__content"&gt;
+    &lt;div class="m-modal__header u-margin-bottom-xs"&gt;
+      &lt;button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;h4 id="myLargeModalTitle" class="h6"&gt;Aeneis&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="u-margin-bottom"&gt;
+      &lt;p id="myLargeModalDesc"&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="m-modal__footer"&gt;
+      &lt;button class="a-button"&gt;Got it&lt;/button&gt;
+      &lt;button class="a-button-outline"&gt;Cancel&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-navigation" aria-label="Navigation"></a>
+        <h3 class="u-margin-top-lg">Navigation</h3>
+        <span class="d-file">molecules/molecules.navigation</span>
+
+        <div class="m-alert d-alert m-alert--wcag">
+            <p><span class="u-screen-reader-only">Accessibility note. </span>In order to make your navigation accessible make sure to follow the <a href="https://www.w3.org/TR/wai-aria-practices-1.2/#tabpanel" title="WAI-ARIA Authoring Practices 1.2 - 3.23 Tabs" class="has-icon-right" target="_blank">ARIA design patterns for tabs<span class="fa fa-external-link" aria-hidden="true"></span><span class="u-screen-reader-only"> (external)</span></a>. Also note that none of the examples below include an actual tab panel, which is part of the design pattern.</p>
+        </div>
+
+        <h4 class="u-margin-top-lg">List navigation</h4>
+        <div class="d">
+            <div>
+                <ul class="m-nav-list u-margin-bottom-lg" role="tablist" aria-label="My tablist">
+                    <li><a href="javascript:void(0);" role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</a></li>
+                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></a></li>
+                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
+                </ul>
+
+                <ul class="m-nav-list m-nav-list--left">
+                    <li><a href="javascript:void(0);" role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</a></li>
+                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></a></li>
+                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list" role="tablist" aria-label="My tablist"&gt;
+  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list m-nav-list--left"&gt;
+  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-alert u-margin-bottom d-alert">
+                    <p>In order to maintain correct semantics, you also can use buttons inside a `nav-list`. Use this option when working with click events, instead of linking to another page.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="d">
+            <div>
+                <ul class="m-nav-list u-margin-bottom-lg" role="tablist" aria-label="My tablist">
+                    <li><button role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</button></li>
+                    <li><button class="is-active" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></button></li>
+                    <li><button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</button></li>
+                </ul>
+
+                <ul class="m-nav-list m-nav-list--left u-margin-bottom-lg" role="tablist" aria-label="My tablist">
+                    <li><button role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</button></li>
+                    <li><button class="is-active" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></button></li>
+                    <li><button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</button></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list" role="tablist" aria-label="My tablist"&gt;
+  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list m-nav-list--left" role="tablist" aria-label="My tablist"&gt;
+  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="u-margin-top-lg">Tab navigation</h4>
+        <div class="d">
+            <div>
+                <ul class="m-nav-tabs u-margin-bottom-lg" role="tablist" aria-label="My tablist">
+                    <li><a href="javascript:void(0);" role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</a></li>
+                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></a></li>
+                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
+                </ul>
+
+
+                <ul class="m-nav-tabs m-nav-tabs--left u-margin-bottom-lg" role="tablist" aria-label="My tablist">
+                    <li><a href="javascript:void(0);" role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</a></li>
+                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></a></li>
+                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
+                </ul>
+
+
+                <ul class="m-nav-tabs m-nav-tabs--right u-margin-bottom-lg" role="tablist" aria-label="My tablist">
+                    <li><a href="javascript:void(0);" role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</a></li>
+                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></a></li>
+                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
+                </ul>
+
+
+                <ul class="m-nav-tabs m-nav-tabs--left u-margin-bottom-lg" role="tablist" aria-label="My tablist">
+                    <li><button role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</button></li>
+                    <li><button class="is-active" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></button></li>
+                    <li><button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</button></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs" role="tablist" aria-label="My tablist"&gt;
+  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs m-nav-tabs--left" role="tablist" aria-label="My tablist"&gt;
+  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs m-nav-tabs--right" role="tablist" aria-label="My tablist"&gt;
+  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs m-nav-tabs--left" role="tablist" aria-label="My tablist"&gt;
+  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <div class="m-alert d-alert">
+            <p>Note that on mobile devices <code>.m-nav-tabs</code> has the exact same appearance as <code>.m-nav-list</code>.</p>
+        </div>
+
+        <a name="molecules-overlay" aria-label="Overlay"></a>
+        <h3 class="u-margin-top-lg">Overlay</h3>
+        <span class="d-file">molecules/molecules.overlay</span>
+        <div class="d">
+            <div>
+                <div class="a-input u-margin-bottom-lg d-overlay">
+                    <div class="a-switch">
+                        <label class="a-switch__label">Hide overlay</label>
+                        <div class="a-switch__toggle">
+                            <input type="checkbox" name="input-modal" id="input-modal" role="switch" aria-checked="false">
+                            <label for="input-modal"><span class="u-screen-reader-only">Toggle overlay</span></label>
+                            <div class="m-overlay">
+                                <div class="m-overlay__inner">
+                                    <div class="m-modal">
+                                        <div class="m-modal__content">
+                                            <div class="m-modal__body u-margin-bottom">
+                                                <p>This simple modal is just one example of what can be put inside an overlay.</p>
+                                            </div>
+                                            <div class="m-modal__footer">
+                                                <label for="input-modal"><a class="a-button">Close overlay</a></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="a-switch__label">Show overlay</label>
+                    </div>
+                </div>
+                <div class="m-alert d-alert">
+                    <p>In order to make the overlay visible, just add the <code>.is-active</code> class, as demonstrated in the example.</p>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-overlay"&gt;
+  &lt;div class="m-overlay__inner"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-overlay is-active"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-pagination" aria-label="Pagination"></a>
+        <h3 class="u-margin-top-lg">Pagination</h3>
+        <span class="d-file">molecules/molecules.pagination</span>
+        <h4 class="u-margin-top-lg">Regular pagination</h4>
+        <div class="d">
+            <div>
+                <ul class="m-pagination u-margin-bottom">
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                </ul>
+                <ul class="m-pagination u-margin-bottom">
+                    <li class="m-pagination__prev"><a class="is-disabled" aria-label="Go to the previous page (disabled)"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__label"><span class="u-screen-reader-only">Page </span>1 of 6</li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                </ul>
+                <ul class="m-pagination u-margin-bottom">
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li>...</li>
+                    <li><a href="javascript:void(0);" aria-label="Go to page 3">3</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
+                    <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
+                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__label"&gt;&lt;span class="u-screen-reader-only"&gt;Page &lt;/span&gt;1 of 6&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;...&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Go to page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <h4 class="u-margin-top-lg">Outline pagination</h4>
+        <div class="d">
+            <div>
+                <ul class="m-pagination m-pagination--outline u-margin-bottom">
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                </ul>
+                <ul class="m-pagination m-pagination--outline u-margin-bottom">
+                    <li class="m-pagination__prev"><a class="is-disabled" aria-label="Go to the previous page (disabled)"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__label"><span class="u-screen-reader-only">Page </span>1 of 6</li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                </ul>
+                <ul class="m-pagination m-pagination--outline u-margin-bottom">
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li>...</li>
+                    <li><a href="javascript:void(0);" aria-label="Go to page 3">3</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
+                    <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
+                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outline"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outline"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__label"&gt;&lt;span class="u-screen-reader-only"&gt;Page &lt;/span&gt;1 of 6&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outline"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;...&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Go to page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <h4 class="u-margin-top-lg">Pagination sizes</h4>
+        <div class="d">
+            <div>
+                <ul class="m-pagination m-pagination--small u-margin-bottom">
+                    <li class="m-pagination__prev"><a class="is-disabled" aria-label="Go to the previous page (disabled)"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__label"><span class="u-screen-reader-only">Page </span>1 of 6</li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                </ul>
+                <ul class="m-pagination m-pagination--large u-margin-bottom">
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li>...</li>
+                    <li><a href="javascript:void(0);" aria-label="Go to page 3">3</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
+                    <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
+                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                </ul>
+                <ul class="m-pagination m-pagination--outline m-pagination--large u-margin-bottom">
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                </ul>
+                <ul class="m-pagination m-pagination--outline m-pagination--small u-margin-bottom">
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li>...</li>
+                    <li><a href="javascript:void(0);" aria-label="Go to page 3">3</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
+                    <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
+                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--small"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__label"&gt;&lt;span class="u-screen-reader-only"&gt;Page &lt;/span&gt;1 of 6&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--large"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;...&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Go to page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outline m-pagination--large"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outline m-pagination--small"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;...&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Go to page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <a name="molecules-progress" aria-label="Progress"></a>
+        <h3 class="u-margin-top-lg">Progress</h3>
+        <span class="d-file">molecules/molecules.progress</span>
+        <div class="d">
+            <div>
+                <div class="m-progress">
+                    <div class="m-progress__label">Step 1 of 5</div>
+                    <div class="m-progress__inner">
+                        <div class="m-progress__bar" style="width: 20%"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-progress"&gt;
+  &lt;div class="m-progress__label"&gt;Step 1 of 5&lt;/div&gt;
+  &lt;div class="m-progress__inner"&gt;
+    &lt;div class="m-progress__bar" style="width: 20%"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-progress m-progress--inline">
+                    <div class="m-progress__inner">
+                        <div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                    </div>
+                    <div class="m-progress__label">20%</div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-progress m-progress--inline"&gt;
+  &lt;div class="m-progress__inner"&gt;
+    &lt;div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="m-progress__label"&gt;20%&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-progress m-progress--inline">
+                    <div class="m-progress__label">20%</div>
+                    <div class="m-progress__inner">
+                        <div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-progress m-progress--inline"&gt;
+  &lt;div class="m-progress__label"&gt;20%&lt;/div&gt;
+  &lt;div class="m-progress__inner"&gt;
+    &lt;div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-progress u-margin-top-lg">
+                    <div class="m-progress__inner">
+                        <div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            <div class="a-tooltip a-tooltip--primary a-tooltip--top">
+                                <p>20%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-progress"&gt;
+  &lt;div class="m-progress__inner"&gt;
+    &lt;div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;
+      &lt;div class="a-tooltip a-tooltip--primary a-tooltip--top"&gt;
+        &lt;p&gt;20%&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-range-slider" aria-label="Range slider"></a>
+        <h3 class="u-margin-top-lg">Range slider</h3>
+        <span class="d-file">molecules/molecules.range-slider</span>
+        <div class="m-alert d-alert m-alert--wcag">
+            <p><span class="u-screen-reader-only">Accessibility note. </span>Also check the <a href="https://www.w3.org/TR/wai-aria-practices-1.2/#slider" title="WAI-ARIA Authoring Practices 1.2 - 3.19 Slider" class="has-icon-right" target="_blank">ARIA best practices<span class="fa fa-external-link" aria-hidden="true"></span><span class="u-screen-reader-only"> (external)</span></a> in order to make the range slider accessible.</p>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-range-slider u-margin-top-lg">
+                    <div class="m-range-slider__inner">
+                        <div class="m-range-slider__bar" style="width: 50%"></div>
+                        <span class="m-range-slider__handle" style="left: 50%;" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+                            <div class="m-range-slider__tooltip a-tooltip a-tooltip--primary a-tooltip--top">
+                                <p>50%</p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-range-slider"&gt;
+  &lt;div class="m-range-slider__inner"&gt;
+    &lt;div class="m-range-slider__bar" style="width: 50%"&gt;&lt;/div&gt;
+    &lt;span class="m-range-slider__handle" style="left: 50%;" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" tabindex="0"&gt;
+      &lt;div class="m-range-slider__tooltip a-tooltip a-tooltip--primary a-tooltip--top"&gt;
+        &lt;p&gt;50%&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-range-slider u-margin-top-lg">
+                    <div class="m-range-slider__inner">
+                        <div class="m-range-slider__bar" style="left: 20%; width: 60%"></div>
+                        <span class="m-range-slider__handle" style="left: 20%;" role="slider" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+                            <div class="m-range-slider__tooltip a-tooltip a-tooltip--primary a-tooltip--top">
+                                <p>20%</p>
+                            </div>
+                        </span>
+                        <span class="m-range-slider__handle" style="left: 80%;" role="slider" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+                            <div class="m-range-slider__tooltip a-tooltip a-tooltip--primary a-tooltip--top">
+                                <p>80%</p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-range-slider"&gt;
+  &lt;div class="m-range-slider__inner"&gt;
+    &lt;div class="m-range-slider__bar" style="left: 20%; width: 60%"&gt;&lt;/div&gt;
+    &lt;span class="m-range-slider__handle" style="left: 20%;" role="slider" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" tabindex="0"&gt;
+      &lt;div class="m-range-slider__tooltip a-tooltip a-tooltip--primary a-tooltip--top"&gt;
+        &lt;p&gt;20%&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/span&gt;
+    &lt;span class="m-range-slider__handle" style="left: 80%;" role="slider" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" tabindex="0"&gt;
+      &lt;div class="m-range-slider__tooltip a-tooltip a-tooltip--primary a-tooltip--top"&gt;
+        &lt;p&gt;80%&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-range-slider u-margin-top">
+                    <div class="m-range-slider__inner">
+                        <div class="m-range-slider__bar" style="width: 50%"></div>
+                        <span class="m-range-slider__handle" style="left: 50%;" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+                            <span class="m-range-slider__value">50%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-range-slider"&gt;
+  &lt;div class="m-range-slider__inner"&gt;
+    &lt;div class="m-range-slider__bar" style="width: 50%"&gt;&lt;/div&gt;
+    &lt;span class="m-range-slider__handle" style="left: 50%;" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" tabindex="0"&gt;
+      &lt;span class="m-range-slider__value"&gt;50%&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-range-slider u-margin-top">
+                    <div class="m-range-slider__inner">
+                        <div class="m-range-slider__bar" style="left: 20%; width: 60%"></div>
+                        <span class="m-range-slider__handle" style="left: 20%;" role="slider" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+                            <span class="m-range-slider__value">20%</span>
+                        </span>
+                        <span class="m-range-slider__handle" style="left: 80%;" role="slider" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+                            <span class="m-range-slider__value">80%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-range-slider"&gt;
+  &lt;div class="m-range-slider__inner"&gt;
+    &lt;div class="m-range-slider__bar" style="left: 20%; width: 60%"&gt;&lt;/div&gt;
+    &lt;span class="m-range-slider__handle" style="left: 20%;" role="slider" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" tabindex="0"&gt;
+      &lt;span class="m-range-slider__value"&gt;20%&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="m-range-slider__handle" style="left: 80%;" role="slider" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" tabindex="0"&gt;
+      &lt;span class="m-range-slider__value"&gt;80%&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-selectable-list" aria-label="Selectable list"></a>
+        <h3 class="u-margin-top-lg">Selectable list</h3>
+        <span class="d-file">molecules/molecules.selectable-list</span>
+        <div class="d">
+            <div>
+                <ul class="m-selectable-list">
+                    <li><a href="javascript:void(0);" class="m-selectable-list__item">Thomas Edison</a></li>
+                    <li><a href="javascript:void(0);" class="m-selectable-list__item m-selectable-list__item--active" aria-current="page">Leonardo da Vinci</a></li>
+                    <li><a href="javascript:void(0);" class="m-selectable-list__item">Albert Einstein</a></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div&gt;
+  &lt;ul class="m-selectable-list"&gt;
+    &lt;li&gt;&lt;a href="#" class="m-selectable-list__item"&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" class="m-selectable-list__item m-selectable-list__item--active" aria-current="page"&gt;Leonardo da Vinci&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" class="m-selectable-list__item"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <ul class="m-selectable-list m-selectable-list--no-border">
+                    <li><a href="javascript:void(0);" class="m-selectable-list__item">Thomas Edison</a></li>
+                    <li><a href="javascript:void(0);" class="m-selectable-list__item m-selectable-list__item--active" aria-current="page">Leonardo da Vinci</a></li>
+                    <li><a href="javascript:void(0);" class="m-selectable-list__item">Albert Einstein</a></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div&gt;
+  &lt;ul class="m-selectable-list m-selectable-list--no-border"&gt;
+    &lt;li&gt;&lt;a href="#" class="m-selectable-list__item"&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" class="m-selectable-list__item m-selectable-list__item--active" aria-current="page"&gt;Leonardo da Vinci&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" class="m-selectable-list__item"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <ul class="m-selectable-list">
+                    <li class="m-selectable-list__item">Thomas Edison</li>
+                    <li class="m-selectable-list__item m-selectable-list__item--active" aria-current="page">Leonardo da Vinci</li>
+                    <li class="m-selectable-list__item">Albert Einstein</li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div&gt;
+  &lt;ul class="m-selectable-list&gt;
+    &lt;li class="m-selectable-list__item"&gt;Thomas Edison&lt;/li&gt;
+    &lt;li class="m-selectable-list__item m-selectable-list__item--active" aria-current="page"&gt;Leonardo da Vinci&lt;/li&gt;
+    &lt;li class="m-selectable-list__item"&gt;Albert Einstein&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-step-indicator" aria-label="Step indicator"></a>
+        <h3 class="u-margin-top-lg">Step indicator</h3>
+        <span class="d-file">molecules/molecules.step-indicator</span>
+        <div class="d">
+            <div>
+                <ol class="m-step-indicator">
+                    <li class="is-completed"><span class="m-step-indicator__label">Step 1<span class="u-screen-reader-only"> (completed)</span></span></li>
+                    <li class="is-completed"><span class="m-step-indicator__label">Step 2<span class="u-screen-reader-only"> (completed)</span></span></li>
+                    <li class="is-active" aria-current="step"><span class="m-step-indicator__label">Step 3</span></li>
+                    <li><span class="m-step-indicator__label">Step 4</span></li>
+                </ol>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ol class="m-step-indicator"&gt;
+  &lt;li class="is-completed"&gt;&lt;span class="m-step-indicator__label"&gt;Step 1&lt;span class="u-screen-reader-only"&gt; (completed)&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+  &lt;li class="is-completed"&gt;&lt;span class="m-step-indicator__label"&gt;Step 2&lt;span class="u-screen-reader-only"&gt; (completed)&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+  &lt;li class="is-active" aria-current="step"&gt;&lt;span class="m-step-indicator__label"&gt;Step 3&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span class="m-step-indicator__label"&gt;Step 4&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-tag" aria-label="Tag"></a>
+        <h3 class="u-margin-top-lg">Tag</h3>
+        <span class="d-file">molecules/molecules.tag</span>
+        <div class="d">
+            <div>
+                <div class="m-tag">
+                    <span class="m-tag__label">My fancy tag</span>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
+  &lt;span class="m-tag__label"&gt;My fancy tag&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-tag">
+                    <label for="new-tag" class="u-screen-reader-only">Insert new tag</label>
+                    <input id="new-tag" class="m-tag__input" type="text" placeholder="Insert new tag" />
+                </div>
+                <div class="m-alert d-alert m-alert--wcag">
+                    <p><span class="u-screen-reader-only">Accessibility note. </span>Note that you can't solely rely on a placeholder for creating new tags.</p>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
+  &lt;label for="new-tag" class="u-screen-reader-only"&gt;Insert new tag&lt;/label&gt;
+  &lt;input id="new-tag" class="m-tag__input" type="text" placeholder="Insert new tag" /&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-tag">
+                    <span class="m-tag__label">My tag with delete button</span>
+                    <button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"><span class="fa fa-close" aria-hidden="true"></span></button>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
+  &lt;span class="m-tag__label"&gt;My tag with delete button&lt;/span&gt;
+  &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div>
+                    <div class="m-tag u-margin-bottom-xs">
+                        <button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"><span class="fa fa-check" aria-hidden="true"></span></button>
+                        <span class="m-tag__label">My tag with icon</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="m-tag">
+                        <button class="a-button a-button--small a-button--success has-icon" aria-label="Accept"><span class="fa fa-check" aria-hidden="true"></span></button>
+                        <span class="m-tag__label">My other tag with icon</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
+  &lt;button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"&gt;&lt;span class="fa fa-check" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;span class="m-tag__label"&gt;My tag with icon&lt;/span&gt;
+ &lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
+  &lt;button class="a-button a-button--small a-button--success has-icon" aria-label="Accept"&gt;&lt;span class="fa fa-check" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;span class="m-tag__label"&gt;My other tag with icon&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="molecules-upload" aria-label="Upload"></a>
+        <h3 class="u-margin-top-lg">Upload</h3>
+        <span class="d-file">molecules/molecules.upload</span>
+        <div class="d">
+            <div>
+                <div class="m-upload">
+                    <div class="m-upload__inner">
+                        <div class="m-upload__dropzone">
+                            <input id="upload-1" type="file" multiple="multiple" class="m-upload__input">
+                            <div class="m-upload__content">
+                                <label for="upload-1" class="m-upload__message">Drag a file here or click to browse</label>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="m-upload__description">Maximum file size: 4MB</small>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-upload"&gt;
+  &lt;div class="m-upload__inner"&gt;
+    &lt;div class="m-upload__dropzone"&gt;
+      &lt;input id="upload" type="file" multiple="multiple" class="m-upload__input"&gt;
+      &lt;div class="m-upload__content"&gt;
+        &lt;label for="upload" class="m-upload__message"&gt;Drag a file here or click to browse&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;small class="m-upload__description"&gt;Maximum file size: 4MB&lt;/small&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-upload is-disabled">
+                    <div class="m-upload__inner">
+                        <div class="m-upload__dropzone">
+                            <input id="upload-2" type="file" multiple="multiple" class="m-upload__input" disabled>
+                            <div class="m-upload__content">
+                                <label for="upload-2" class="m-upload__message">Drag a file here or click to browse</label>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="m-upload__description">Maximum file size: 4MB</small>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-upload is-disabled"&gt;
+  &lt;div class="m-upload__inner"&gt;
+    &lt;div class="m-upload__dropzone"&gt;
+      &lt;input id="upload" type="file" multiple="multiple" class="m-upload__input" disabled&gt;
+      &lt;div class="m-upload__content"&gt;
+        &lt;label for="upload-2" class="m-upload__message"&gt;Drag a file here or click to browse&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;small class="m-upload__description"&gt;Maximum file size: 4MB&lt;/small&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-upload">
+                    <div class="m-upload__inner">
+                        <div class="m-upload__dropzone">
+                            <input id="upload-3" type="file" multiple="multiple" class="m-upload__input">
+                            <div class="m-upload__content">
+                                <label for="upload-3" class="m-upload__message u-margin-bottom">Drag a file here or click to browse</label>
+                                <p class="m-upload__uploads u-text-bold u-margin-bottom-xs">my-doc.pdf and my-pic.jpg</p>
+                                <div class="m-upload__progress m-progress">
+                                    <div class="m-progress__inner">
+                                        <div class="m-progress__bar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="m-upload__description">Maximum file size: 4MB</small>
+                    <ul class="m-upload__files">
+                        <li>
+                            <span class="fa fa-file-o" aria-hidden="true"></span>
+                            <span class="m-upload__filename">my-doc.pdf</span>
+                            <button class="m-upload__delete a-button-transparent a-button--default a-button--small has-icon"><span class="fa fa-close" aria-label="Close" aria-hidden="true"></span></button>
+                        </li>
+                        <li>
+                            <span class="fa fa-file-o" aria-hidden="true"></span>
+                            <span class="m-upload__filename">my-pic.jpg</span>
+                            <button class="m-upload__delete a-button-transparent a-button--default a-button--small has-icon"><span class="fa fa-close" aria-label="Close" aria-hidden="true"></span></button>
+                        </li>
+                        <li class="is-error">
+                            <span class="fa fa-warning u-text-danger" aria-hidden="true"></span>
+                            <span class="m-upload__filename">my-unallowed-file.xml</span>
+                            <span class="m-upload__error">This file format is not allowed.</span>
+                            <button class="m-upload__delete a-button-transparent a-button--danger a-button--small has-icon"><span class="fa fa-close" aria-label="Close" aria-hidden="true"></span></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-upload"&gt;
+  &lt;div class="m-upload__inner"&gt;
+    &lt;div class="m-upload__dropzone"&gt;
+      &lt;input id="upload-3" type="file" multiple="multiple" class="m-upload__input"&gt;
+      &lt;div class="m-upload__content"&gt;
+        &lt;label for="upload-3" class="m-upload__message u-margin-bottom"&gt;Drag a file here or click to browse&lt;/label&gt;
+        &lt;p class="m-upload__uploads u-text-bold u-margin-bottom-xs"&gt;my-doc.pdf and my-pic.jpg&lt;/p&gt;
+        &lt;div class="m-upload__progress m-progress"&gt;
+          &lt;div class="m-progress__inner"&gt;
+            &lt;div class="m-progress__bar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;small class="m-upload__description"&gt;Maximum file size: 4MB&lt;/small&gt;
+  &lt;ul class="m-upload__files"&gt;
+    &lt;li&gt;
+      &lt;span class="fa fa-file-o" aria-hidden="true"&gt;&lt;/span&gt;
+      &lt;span class="m-upload__filename"&gt;my-doc.pdf&lt;/span&gt;
+      &lt;button class="m-upload__delete a-button-transparent a-button--default a-button--small has-icon"&gt;&lt;span class="fa fa-close" aria-label="Close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;span class="fa fa-file-o" aria-hidden="true"&gt;&lt;/span&gt;
+      &lt;span class="m-upload__filename"&gt;my-pic.jpg&lt;/span&gt;
+      &lt;button class="m-upload__delete a-button-transparent a-button--default a-button--small has-icon"&gt;&lt;span class="fa fa-close" aria-label="Close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li class="is-error"&gt;
+      &lt;span class="fa fa-warning" aria-hidden="true"&gt;&lt;/span&gt;
+      &lt;span class="m-upload__filename"&gt;my-unallowed-file.xml&lt;/span&gt;
+      &lt;span class="m-upload__error"&gt;This file format is not allowed.&lt;/span&gt;
+      &lt;button class="m-upload__delete a-button-transparent a-button--danger a-button--small has-icon"&gt;&lt;span class="fa fa-close" aria-label="Close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,87 @@
+/**
+ * BUTTON GROUP
+ * -------------------------------------------------------------------
+ */
+
+.m-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1px;
+  vertical-align: middle;
+
+  > [class*='a-button'] {
+    z-index: layer('base');
+
+    &:not(.has-icon) {
+      width: auto;
+    }
+
+    &[disabled] {
+      z-index: layer('auto');
+    }
+
+    &:focus {
+      z-index: layer('top');
+    }
+  }
+
+  > .a-button {
+    border-right: 1px solid mix($btn-primary-bg, $black, 85%);
+    margin-top: -1px;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &.a-button--secondary {
+      border-color: mix($btn-secondary-bg, $black, 85%);
+    }
+
+    &.a-button--success {
+      border-color: mix($btn-success-bg, $black, 85%);
+    }
+
+    &.a-button--warning {
+      border-color: mix($btn-warning-bg, $black, 85%);
+    }
+
+    &.a-button--danger {
+      border-color: mix($btn-danger-bg, $black, 85%);
+    }
+
+    &.a-button--transparent {
+      border: none;
+    }
+  }
+
+  > .a-button-outline {
+    margin-bottom: -1px;
+    margin-right: -1px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:not([disabled]):hover,
+    &:not([disabled]):active,
+    &:not([disabled]):focus {
+      z-index: layer('base');
+    }
+  }
+}
+
+.m-button-group--vertical {
+  flex-direction: column;
+
+  > .a-button {
+    border-right: none;
+
+    &:not(:first-child) {
+      border-top: 1px solid mix($btn-primary-bg, $black, 85%);
+    }
+  }
+
+  > .a-button-outline {
+    margin-right: 0;
+  }
+}

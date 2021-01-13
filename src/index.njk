@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- CSS /////////////////////////////////////////////////////////
+    - https://github.com/filamentgroup/loadCSS
+
+    Using 'gulp-usemin' to concatenate CSS files in production
+    Following a Mobile First approach, all media queries are
+    combined in a separate file
+
+    Note: <link ... media="screen and (min-width: 40em)" />
+    only defines when CSS will be applied, it will not block
+    the file from being downloaded
+    -->
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/styleguide.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.1/build/styles/a11y-light.min.css">
+
+    <!-- FAVICONS /////////////////////////////////////////////////////////
+    -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/favicon-16x16.png">
+    <link rel="manifest" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/site.webmanifest">
+    <link rel="mask-icon" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/safari-pinned-tab.svg" color="#cf0039">
+    <meta name="msapplication-TileColor" content="#cf0039">
+    <meta name="theme-color" content="#cf0039">
+
+    <!-- SEO /////////////////////////////////////////////////////////
+    - http://support.google.com/webmasters/bin/answer.py?hl=nl&answer=79812&topic=2371375&ctx=topic
+    - http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013
+    - http://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md
+    - http://moz.com/blog/meta-data-templates-123
+
+    Set meta-data and force search engines to display this information
+    in search results (this prevents caching of meta-data)
+    -->
+
+    <title>Core Branding Antwerpen</title>
+
+    <meta name="description" content="Core Branding Antwerpen">
+    <meta name="robots" content="noodp, noydir">
+
+
+    <!-- META-TAGS FOR MOBILE ////////////////////////////////////////
+    - http://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+    - http://www.metatags.nl/mobiele_metatags_voor_de_smartphone
+    - http://github.com/h5bp/mobile-boilerplate/wiki/The-Markup
+
+    Let search engines know this page is optimized for mobile devices
+    and enable smooth font rendering on IE Mobile
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta http-equiv="cleartype" content="on" />
+    -->
+
+    <!--
+    Set the viewport for IOS to enable media queries and prevent phone
+    numbers from being displayed as hyperlinks (IOS default behavior)
+    Note: don't disable the ability to zoom, it's bad UX
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no" />
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+</head>
+<body>
+    <div role="banner">
+        <header class="o-header" aria-label="Header">
+            <a href="#main-content" class="a-button-negative o-header__button o-header__button-skip">Skip to main content</a>
+            <a href="/" class="o-header__logo" aria-label="Antwerp branding styleguide">
+                <img src="images/a-logo.svg" alt="Homepage Antwerp branding styleguide.">
+            </a>
+        </header>
+
+        <div class="u-wrapper d-h1 u-text-xlight u-bg-primary">
+            <div class="u-container">
+                <h1>Antwerp branding styleguide <small class="u-bg-secondary u-text-xlight">v{{ VERSION_INFO.version }}</small></h1>
+                <p class="u-margin-top">A collection of building blocks for your next Antwerp-based application.</p>
+            </div>
+        </div>
+    </div>
+
+    <div role="main" id="main-content">
+        <div class="d-intro">
+            {% include "templates/intro.njk" %}
+        </div>
+
+        <div class="line u-bg-light">
+            {% include "templates/toc.njk" %}
+        </div>
+
+        <div class="line">
+            {% include "templates/quarks.njk" %}
+        </div>
+
+        <div class="line">
+            {% include "templates/base.njk" %}
+        </div>
+
+        <div class="line">
+            {% include "templates/utilities.njk" %}
+        </div>
+
+        <div class="line">
+            {% include "templates/atoms.njk" %}
+        </div>
+
+        <div class="line">
+            {% include "templates/molecules.njk" %}
+        </div>
+
+        <div class="line">
+            {% include "templates/organisms.njk" %}
+        </div>
+
+        <footer class="o-footer u-margin-top-xx">
+            <span class="o-footer__label">© stad Antwerpen</span>
+
+            <a href="#" class="o-footer__button a-button a-button--secondary has-icon" aria-label="Go back to top">
+                <span class="fa fa-arrow-up" aria-hidden="true"></span>
+            </a>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.1/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

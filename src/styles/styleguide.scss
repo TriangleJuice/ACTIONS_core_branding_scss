@@ -1,0 +1,344 @@
+@charset 'utf-8';
+
+/**
+ * CORE BRANDING API
+ * -------------------------------------------------------------------
+ */
+
+@import 'quarks';
+
+
+
+/**
+ * CUSTOM STYLING FOR STYLEGUIDE
+ * -------------------------------------------------------------------
+ */
+
+.a-pre {
+  margin: 0;
+
+  + .a-pre {
+    margin-top: $spacer / 4;
+  }
+}
+
+.d {
+  display: flex;
+  flex-direction: column;
+  margin: $spacer $spacer * -1;
+
+  @include at($screen-sm) {
+    flex-direction: row;
+  }
+
+  > div {
+    flex: 1 1 auto;
+    padding: $spacer / 4 $spacer 0;
+
+    @include at($screen-sm) {
+      width: 0;
+    }
+  }
+}
+
+.d-intro {
+  > div {
+    flex: 1 1 auto;
+  }
+}
+
+.u-margin-bottom-top-xxs {
+  margin: $spacer-xs / 2 0;
+}
+
+.d-toc {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__cell {
+    flex: 0 0 50%;
+
+    @include at($screen-sm) {
+      flex: 0 0 (100% / 3);
+    }
+
+    @include at($screen-lg) {
+      flex: 0 0 (100% / 6);
+    }
+  }
+}
+
+.a-list__toc {
+  margin: 0;
+  padding-bottom: $spacer;
+
+  li {
+    padding-bottom: 0;
+  }
+}
+
+.line {
+  border-top: 1px solid $border-color;
+}
+
+.d-h1 {
+  padding-bottom: $spacer;
+  padding-top: $spacer * 3.5;
+
+  small {
+    padding: $spacer-xs / 4 $spacer-xs / 2;
+  }
+
+  @include at($screen-xs) {
+    padding-bottom: $spacer * 2.5;
+    padding-top: $spacer * 2.5;
+  }
+}
+
+.d-h2 {
+  padding-top: $spacer;
+}
+
+.d-file {
+  color: $grey-dark;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: $spacer-xs / 6;
+}
+
+.d-alert {
+  margin-top: $spacer / 2;
+  padding: $spacer / 2;
+}
+
+.m-alert--wcag {
+  padding-left: $spacer-lg;
+  position: relative;
+
+  &:before {
+    color: $brand-primary;
+    content: '\f29a';
+    font-family: FontAwesome;
+    font-size: rem(20px);
+    left: $spacer-xs;
+    position: absolute;
+    top: $spacer-xs;
+  }
+}
+
+.d-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: $spacer * -1;
+  margin-right: $spacer * -1;
+
+  > li {
+    padding: 0 $spacer;
+    width: 100%;
+
+    @include at($screen-sm) {
+      width: 50%;
+    }
+  }
+
+  &__colors {
+    > li {
+      margin-top: $spacer / 2;
+      padding: $spacer / 2 $spacer $spacer / 2 $spacer * 6;
+      position: relative;
+
+      &.d-white {
+        .d-color {
+          box-shadow: 0 0 0 1px $grey-light inset;
+        }
+      }
+
+      .d-color {
+        bottom: 0;
+        display: block;
+        left: $spacer;
+        position: absolute;
+        top: 0;
+        width: $spacer * 4;
+      }
+
+      @include at($screen-lg) {
+        width: 100 / 3 * 1%;
+      }
+    }
+  }
+
+  &__variables {
+    > li {
+      margin-top: $spacer / 4;
+
+      @include at($screen-lg) {
+        width: 100 / 3 * 1%;
+      }
+    }
+  }
+
+  &__antwerpen-icons {
+    > li {
+      margin-bottom: $spacer-xs;
+
+      > span {
+        line-height: .75;
+        position: absolute;
+      }
+
+      > pre {
+        margin-left: $spacer-lg + $spacer-xs;
+      }
+    }
+  }
+}
+
+.d-font {
+  font-size: 1.5em;
+
+  &-lg {
+    font-size: 3em;
+  }
+}
+
+.d-bgutility {
+  padding: $spacer;
+
+  &.d-u-bg-white {
+    box-shadow: 0 0 0 1px $grey-light inset;
+  }
+}
+
+.d-spacing-utility {
+  background: repeating-linear-gradient(
+    45deg,
+    $white,
+    $white 10px,
+    $grey-lighter 10px,
+    $grey-lighter 20px
+  );
+  box-shadow: 0 0 0 1px $grey-light inset;
+  display: inline-block;
+  padding: $spacer / 6;
+
+  strong {
+    background-color: rgba($black-pearl, .6);
+    display: inline-block;
+    padding: rem(1px) rem(4px) rem(2px);
+  }
+}
+
+.d-u-text-xlight,
+.d-u-text-warning {
+  background-color: $black;
+  padding: $spacer / 4;
+}
+
+.d-button {
+  margin-bottom: $spacer / 6; // Improves the 'flow' of multiple consecutive buttons
+}
+
+.d-tooltip {
+  margin-bottom: $spacer / 2; // Improves the 'flow' of multiple consecutive tooltips
+}
+
+.d-datepicker {
+  margin-bottom: 24rem;
+}
+
+.d-flyout {
+  margin-bottom: 12rem;
+
+  &--sm {
+    margin-bottom: 14rem;
+  }
+
+  &--md {
+    margin-bottom: 14rem;
+
+    @include at($screen-sm) {
+      margin-bottom: 9rem;
+    }
+  }
+
+  &--lg {
+    margin-bottom: 14rem;
+
+    @include at($screen-sm) {
+      margin-bottom: 9rem;
+    }
+
+    @include at($screen-md) {
+      margin-bottom: 8rem;
+    }
+  }
+
+  &--full {
+    margin-bottom: 7rem;
+  }
+
+  &--no-padding {
+    margin-bottom: 3rem;
+  }
+
+  &--opens-above {
+    margin-bottom: 6rem;
+  }
+}
+
+.d-icon-list {
+  padding: $spacer;
+}
+
+.d-avatar {
+  margin-top: $spacer-xs / 4;
+}
+
+.d-overlay input:checked ~ .m-overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  label {
+    box-shadow: none;
+    height: auto;
+    margin-bottom: $spacer / 2;
+    position: static;
+    width: auto;
+
+    @include at($screen-sm) {
+      margin-bottom: 0;
+    }
+
+    &:after {
+      content: none;
+    }
+  }
+
+  .m-modal__footer [class*='a-button'] {
+    margin-bottom: 0;
+  }
+}
+
+.d--with-overlay {
+  padding-top: $spacer-lg;
+
+  .o-menu {
+    margin-bottom: -$spacer-xx;
+  }
+
+  @include at($screen-sm){
+    padding-bottom: $spacer-xl;
+    padding-top: 0;
+
+    .o-menu {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.hljs {
+  overflow-y: hidden;
+  padding: 0;
+}
