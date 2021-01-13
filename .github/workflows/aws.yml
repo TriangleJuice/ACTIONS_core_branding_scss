@@ -1,8 +1,8 @@
 name: Deploy to AWS TEST
 on:
   push:
-    branches:
-      - 'master'
+    tags:
+      - v*
 jobs:
   build:
     name: Build
