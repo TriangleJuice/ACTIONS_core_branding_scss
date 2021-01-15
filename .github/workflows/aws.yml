@@ -45,4 +45,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
           SOURCE_DIR: dist/${{ steps.get_version.outputs.version-without-v }}
-          DEST_DIR: /${{ github.event.repository.name }}/${{ steps.get_version.outputs.version-without-v }}
+          DEST_DIR: ${{ github.event.repository.name }}/${{ steps.get_version.outputs.version-without-v }}
