@@ -36,8 +36,8 @@ jobs:
         with:
           name: dist
       - name: Get tag
-        id: tag
-        uses: dawidd6/action-get-tag@v1
+        id: get_version
+        uses: battila7/get-version-action@v2
       - name: Deploying application to Amazon S3
         uses: dvelasquez/deploy-s3-action@main
         with:
@@ -45,5 +45,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
           AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET }}
-          BUCKET_PATH: /${{ github.event.repository.name }}/${{steps.tag.outputs.tag}}
-          DIST_LOCATION_CODE: dist/${{steps.tag.outputs.tag}}
+          BUCKET_PATH: /${{ github.event.repository.name }}/${{ steps.get_version.outputs.version }}
+          DIST_LOCATION_CODE: ./dist/${{ steps.get_version.outputs.version }}
