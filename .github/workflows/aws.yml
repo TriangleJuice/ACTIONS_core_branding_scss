@@ -37,12 +37,20 @@ jobs:
           name: dist
       - name: Get tag
         uses: battila7/get-version-action@v2
-      - name: Deploying application to Amazon S3
-        uses: dvelasquez/deploy-s3-action@main
+      - name: Upload to Amazon S3
+        uses: shallwefootball/s3-upload-action@master
         with:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
-          AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET }}
-          BUCKET_PATH: /${{ github.event.repository.name }}/${{ steps.get_version.outputs.version-without-v }}
-          DIST_LOCATION_CODE: ./dist/${{ steps.get_version.outputs.version-without-v }}
+          aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_bucket: ${{ secrets.AWS_BUCKET }}
+          source_dir: dist/${{ steps.get_version.outputs.version-without-v }}
+          destination_dir: /${{ github.event.repository.name }}/${{ steps.get_version.outputs.version-without-v }}
+      # - name: Deploying application to Amazon S3
+      #   uses: dvelasquez/deploy-s3-action@main
+      #   with:
+      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+      #     AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET }}
+      #     BUCKET_PATH: /${{ github.event.repository.name }}/${{ steps.get_version.outputs.version-without-v }}
+      #     DIST_LOCATION_CODE: ./dist/${{ steps.get_version.outputs.version-without-v }}
