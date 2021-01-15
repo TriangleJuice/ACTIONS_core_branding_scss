@@ -46,4 +46,4 @@ jobs:
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
           AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET }}
           BUCKET_PATH: /${{ github.event.repository.name }}/${{ steps.get_version.outputs.version }}
-          DIST_LOCATION_CODE: ./dist/${{ steps.get_version.outputs.version }}
+          DIST_LOCATION_CODE: ./dist/${{ steps.get_version.outputs.version-without-v }}
